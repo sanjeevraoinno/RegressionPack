@@ -55,12 +55,14 @@ WebUI.scrollToElement(findTestObject('Login_Navigation_Logout Objects/Link_Commi
 WebUI.click(findTestObject('Login_Navigation_Logout Objects/Link_Commissions'))
 
 'Verifying the Username'
+
 /*WebUI.click(findTestObject('Login_Navigation_Logout Objects/User_id'))
 
 WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/user_name'), 1)
 */
 'Verifying Commissions has loaded correctly'
-Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Navigation_Logout Objects/Manage_Organization')), Manager_org)
+Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Navigation_Logout Objects/Manage_Organization')), 
+    Manager_org)
 
 WebUI.waitForPageLoad(3)
 

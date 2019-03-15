@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://lnvo-muat.callidusondemand.com/SalesPortal/#!/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'sapattna'</initValue>
+      <name>Username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Callidus123'</initValue>
+      <name>Password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
