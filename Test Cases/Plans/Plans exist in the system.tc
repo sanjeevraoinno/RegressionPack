@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Plans exist in the system</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2bce4e0-6507-4bea-8fc6-7345fbc6e42c</testCaseGuid>
+   <variable>
+      <defaultValue>'Plan Data'</defaultValue>
+      <description></description>
+      <id>86473e34-bb9d-456f-9e2e-d65a4743fdad</id>
+      <masked>false</masked>
+      <name>Plan_data</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plans'</defaultValue>
+      <description></description>
+      <id>fa11e408-e8a9-453d-8ece-1bbed168a3d4</id>
+      <masked>false</masked>
+      <name>Plan_txt</name>
+   </variable>
+</TestCaseEntity>
