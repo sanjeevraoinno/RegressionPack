@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To verify that Titles(name of the Title) exists in the system</description>
+   <name>Navigation to Participant</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e17be2ff-0e60-4c1a-96cb-97eb3bbf8b2d</testCaseGuid>
+   <variable>
+      <defaultValue>'Payee01'</defaultValue>
+      <description></description>
+      <id>348702ce-5ee6-4621-8e03-c9a0e095ecd4</id>
+      <masked>false</masked>
+      <name>PID</name>
+   </variable>
+   <variable>
+      <defaultValue>'Organization'</defaultValue>
+      <description></description>
+      <id>08ef405a-d46a-46a0-a3e9-da769e3251b6</id>
+      <masked>false</masked>
+      <name>ORG</name>
+   </variable>
+   <variable>
+      <defaultValue>'Participants'</defaultValue>
+      <description></description>
+      <id>01946dfe-7f6e-4bb3-b7cf-d257b14e89b0</id>
+      <masked>false</masked>
+      <name>Part_txt</name>
+   </variable>
+</TestCaseEntity>

@@ -14,26 +14,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
+
 WebUI.callTestCase(findTestCase('Login_Navigation_Logout/Commission Login'), [('header_name') : 'Sales Performance Home '
-        , ('User_name') : 'rkulkarn@calliduscloud.com'], FailureHandling.STOP_ON_FAILURE)
+        , ('Manager_org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Plans Objects/Icon_PlanData'))
+WebUI.mouseOver(findTestObject('Titles Objects/Icon_Organization'))
 
-WebUI.waitForElementPresent(findTestObject('Plans Objects/Icon_PlanData'), 2)
+WebUI.waitForElementPresent(findTestObject('Titles Objects/Icon_Organization'), 1)
 
-'Clicking on Plan data Icon'
-WebUI.click(findTestObject('Plans Objects/Icon_PlanData'))
+'Clicking on Organization icon\r\n'
+WebUI.click(findTestObject('Titles Objects/Icon_Organization'))
 
-'Verifying the linktext of Plan data \r\n'
+'Verifying the linktext of Organization\r\n'
+Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Titles Objects/Organization')), ORG)
 
-Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Plans Objects/Plan data')), Plan_data)
+println('User is able to navigate to Administration tab')
 
-println('User is able to navigate to Plan tab')
+WebUI.waitForElementVisible(findTestObject('Titles Objects/Link_Titles'), 4)
 
-WebUI.waitForElementVisible(findTestObject('Plans Objects/Link_Plan'), 2)
+WebUI.mouseOver(findTestObject('Titles Objects/Link_Titles'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Plans Objects/Link_Plan'))
+'Clicking on Titles link\r\n\r\n'
+WebUI.click(findTestObject('Titles Objects/Link_Titles'))
 
-'Clicking on Plans link\r\n\r\n\r\n'
-WebUI.click(findTestObject('Plans Objects/Link_Plan'))
+'Verifying the linktext of Titles\r\n'
+Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Titles Objects/Titles')), Titletxt)
+
+println('User navigated to Titles screen')
 

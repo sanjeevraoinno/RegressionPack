@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigation to Plan Components</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>01cc97a0-8bee-4dba-814f-863e0f1e9df7</testCaseGuid>
+   <variable>
+      <defaultValue>'Aggregated Revenue against Territory based on Flat Rate'</defaultValue>
+      <description></description>
+      <id>038781dd-ad97-4245-a2d0-9248ffaac522</id>
+      <masked>false</masked>
+      <name>PlanComponentName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plan Data'</defaultValue>
+      <description></description>
+      <id>767f8d55-4ef1-4e4c-8da2-9e4d4f635ea4</id>
+      <masked>false</masked>
+      <name>Plan_data</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plan Components'</defaultValue>
+      <description></description>
+      <id>3365ccd6-7171-4e92-b777-457908e50127</id>
+      <masked>false</masked>
+      <name>PC_txt</name>
+   </variable>
+</TestCaseEntity>
