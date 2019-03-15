@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>Plan_data</name>
    </variable>
+   <variable>
+      <defaultValue>'Plans'</defaultValue>
+      <description></description>
+      <id>7de0dddd-e906-4a04-b19c-33dcd87a443f</id>
+      <masked>false</masked>
+      <name>Plan_txt</name>
+   </variable>
 </TestCaseEntity>
