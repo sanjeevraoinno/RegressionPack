@@ -13,10 +13,10 @@
       <name>header_name</name>
    </variable>
    <variable>
-      <defaultValue>'rkulkarn@calliduscloud.com'</defaultValue>
+      <defaultValue>'Manage Organization'</defaultValue>
       <description></description>
       <id>975ccd8b-94da-4d81-b17b-ea1d1a881689</id>
       <masked>false</masked>
-      <name>User_name</name>
+      <name>Manager_org</name>
    </variable>
 </TestCaseEntity>

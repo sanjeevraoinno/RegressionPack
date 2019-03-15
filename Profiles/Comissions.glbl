@@ -6,17 +6,17 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</initValue>
+      <initValue>'https://lnvo-muat.callidusondemand.com/SalesPortal/#!/'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rkulkarn@calliduscloud.com'</initValue>
+      <initValue>'sapattna'</initValue>
       <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Augg@1234'</initValue>
+      <initValue>'Callidus123'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
