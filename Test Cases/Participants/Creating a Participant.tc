@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Creating a Participant</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f14b2fa5-151b-4eb1-8090-2b5a31450ff7</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>15eea529-146d-4f4b-b287-0d2d49f9276a</id>
+      <masked>false</masked>
+      <name>Participant_calendar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Vishnu1'</defaultValue>
+      <description></description>
+      <id>bb68da23-65c9-424b-a1c1-5553493b0445</id>
+      <masked>false</masked>
+      <name>Payeeid</name>
+   </variable>
+   <variable>
+      <defaultValue>'Mr'</defaultValue>
+      <description></description>
+      <id>b7a1dd3e-9977-4416-ba15-0d07f670a169</id>
+      <masked>false</masked>
+      <name>Prefix</name>
+   </variable>
+   <variable>
+      <defaultValue>'Prasad'</defaultValue>
+      <description></description>
+      <id>1bdf7644-b85b-494c-bc09-d6ad61b7ba8b</id>
+      <masked>false</masked>
+      <name>Firstname</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tunga'</defaultValue>
+      <description></description>
+      <id>abc82580-2646-4a40-b005-706792c426a2</id>
+      <masked>false</masked>
+      <name>Lastname</name>
+   </variable>
+   <variable>
+      <defaultValue>'US'</defaultValue>
+      <description></description>
+      <id>f19d8b79-e967-4433-9328-221e4a41dd17</id>
+      <masked>false</masked>
+      <name>BU_txt</name>
+   </variable>
+</TestCaseEntity>
