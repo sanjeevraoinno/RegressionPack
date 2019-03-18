@@ -3,7 +3,7 @@
    <description></description>
    <name>Commission Login</name>
    <tag></tag>
-   <comment>Verifying the Username</comment>
+   <comment></comment>
    <testCaseGuid>ee9d8fdb-f3e2-4815-88ea-59f6d1f03ce0</testCaseGuid>
    <variable>
       <defaultValue>'Sales Performance Home '</defaultValue>

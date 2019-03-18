@@ -32,8 +32,8 @@ WebUI.maximizeWindow()
 boolean result = Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Navigation_Logout Objects/Header_homepage')), 
     header_name)
 
-if (result == true)
-{
+//if (result == true)
+//{
 
 'Providing the Username'
 WebUI.setText(findTestObject('Login_Navigation_Logout Objects/input_Username_username'), GlobalVariable.Username)
@@ -69,12 +69,12 @@ Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Naviga
 
 WebUI.waitForPageLoad(3)
 
-}
+//}
 
-else{
+/*else{
 	
  System.out.print("Unable to launch the login page")
 	
-}
+}*/
 
 
