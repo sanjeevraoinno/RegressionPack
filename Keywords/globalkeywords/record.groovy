@@ -11,12 +11,8 @@ public class record {
 	@Keyword
 	def RecordNotFound() throws Exception{
 
-
-
-
 		try {
-			boolean norecord = WebUI.waitForElementPresent(findTestObject('Object Repository/Globalkeyword/NoRecordsFound') ,
-					10)
+			boolean norecord = WebUI.waitForElementPresent(findTestObject('Object Repository/Globalkeyword/NoRecordsFound') , 10)
 
 			if (norecord) {
 				'The Record you are searching Not Found.  Test-Case Failed'

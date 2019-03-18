@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>fa527aea-7086-4288-8b80-17cea9461d99</testCaseGuid>
    <variable>
-      <defaultValue>'Aggregated Revenue against Territory based on Flat Rate'</defaultValue>
+      <defaultValue>'NewPlanComp'</defaultValue>
       <description></description>
       <id>b0ae9551-5a5f-4305-964e-bf4af6a3f8a9</id>
       <masked>false</masked>

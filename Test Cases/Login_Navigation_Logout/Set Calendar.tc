@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Set Calendar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>335a6b42-dffa-4013-9e8e-ab8ef4ad2788</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2010'</defaultValue>
+      <description></description>
+      <id>6baba0b2-2a8a-45b2-8f38-1fa331666e4b</id>
+      <masked>false</masked>
+      <name>Txt_calendar</name>
+   </variable>
+</TestCaseEntity>
