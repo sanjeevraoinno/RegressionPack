@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Advanced Search Plan Components</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa527aea-7086-4288-8b80-17cea9461d99</testCaseGuid>
+   <variable>
+      <defaultValue>'Aggregated Revenue against Territory based on Flat Rate'</defaultValue>
+      <description></description>
+      <id>b0ae9551-5a5f-4305-964e-bf4af6a3f8a9</id>
+      <masked>false</masked>
+      <name>PlanComponentName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plan Data'</defaultValue>
+      <description></description>
+      <id>d6703d78-227b-480b-a195-37873b92ce16</id>
+      <masked>false</masked>
+      <name>Plan_data</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plan Components'</defaultValue>
+      <description></description>
+      <id>bceb8070-245b-4015-bec6-4ad29e7b0eb6</id>
+      <masked>false</masked>
+      <name>PC_txt</name>
+   </variable>
+</TestCaseEntity>

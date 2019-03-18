@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>To verify that Titles(name of the Title) exists in the system</description>
-   <name>Participants exists in the system</name>
+   <name>Advanced Search Participant</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>672bc5b8-bc92-463a-a0af-d939f0956882</testCaseGuid>
