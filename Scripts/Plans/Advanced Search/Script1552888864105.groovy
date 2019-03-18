@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Plans/Navigation to Plan'), [('Plan_data') : 'Plan Data', ('Plan_txt') : 'Plans'], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.waitForPageLoad(5)
 
 WebUI.scrollToPosition(0, 0)

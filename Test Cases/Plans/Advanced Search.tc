@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AdvanceSearch</name>
+   <name>Advanced Search</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>51a1582f-2c46-4614-85b5-c7faa359443a</testCaseGuid>

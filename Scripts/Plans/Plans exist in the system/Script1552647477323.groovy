@@ -49,6 +49,6 @@ Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Plans Object
 
 println('User navigated to Plans screen')
 
-WebUI.callTestCase(findTestCase('Plans/AdvanceSearch'), [('SerachString') : 'Quarterly NA Inbound Plan Sales Rep - 3 Elements - Element 1 Payout Trigger'], 
+WebUI.callTestCase(findTestCase('Plans/Advanced Search'), [('SerachString') : 'Quarterly NA Inbound Plan Sales Rep - 3 Elements - Element 1 Payout Trigger'], 
     FailureHandling.STOP_ON_FAILURE)
 
