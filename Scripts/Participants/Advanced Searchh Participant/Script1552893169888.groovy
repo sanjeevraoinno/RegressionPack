@@ -21,8 +21,8 @@ WebUI.callTestCase(findTestCase('Participants/Navigation to Participant'), [('PI
 println('User navigated to Participants screen')
 
 'Clicking on advance search icon if given condition gets passed\r\n'
-if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advance Search objects/Advanced_searchtext'))) {
-    WebUI.click(findTestObject('Object Repository/Advance Search objects/Icon_Advanced Search'))
+if (WebUI.verifyElementClickable(findTestObject('Advanced Search objects/Advanced_searchtext'))) {
+    WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
 
     println('Performing advance search')
 } else {
@@ -30,24 +30,24 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advance Searc
 }
 
 'Clicking on fieldname text box\r\n'
-WebUI.click(findTestObject('Advance Search objects/FieldName_DropDown'))
+WebUI.click(findTestObject('Advanced Search objects/FieldName_DropDown'))
 
-WebUI.scrollToElement(findTestObject('Advance Search objects/Option_Participant_id'), 9)
+WebUI.scrollToElement(findTestObject('Advanced Search objects/Option_Participant_id'), 9)
 
-WebUI.click(findTestObject('Advance Search objects/Option_Participant_id'))
+WebUI.click(findTestObject('Advanced Search objects/Option_Participant_id'))
 
 'Clicking on comparision text box\r\n'
-WebUI.click(findTestObject('Advance Search objects/td_Comparision'))
+WebUI.click(findTestObject('Advanced Search objects/td_Comparision'))
 
-WebUI.scrollToElement(findTestObject('Advance Search objects/option_Equals'), 2)
+WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2)
 
 'Selecting the equal icon'
-WebUI.click(findTestObject('Advance Search objects/option_Equals'))
+WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-WebUI.setText(findTestObject('Advance Search objects/td_Value'), PID)
+WebUI.setText(findTestObject('Advanced Search objects/td_Value'), PID)
 
 'Clicking on Apply Search button\r\n'
-WebUI.click(findTestObject('Advance Search objects/AppySearch_button'))
+WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
