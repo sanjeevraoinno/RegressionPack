@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>General Search</name>
+   <name>General Search Plan</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a3fbe0c0-3e31-4284-b49e-b32b74a97ea2</testCaseGuid>
