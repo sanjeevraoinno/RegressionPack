@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_SetCalendarTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9ef607c2-a4e6-49e5-90d9-95538756942a</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2018\r\n'</defaultValue>
+      <description></description>
+      <id>f81eeb41-4585-478a-82d7-f40301a69a8b</id>
+      <masked>false</masked>
+      <name>Txt_calendar</name>
+   </variable>
+</TestCaseEntity>

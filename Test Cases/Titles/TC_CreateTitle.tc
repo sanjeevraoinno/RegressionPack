@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This scripts creates a title</description>
+   <name>TC_CreateTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1116e030-5853-416f-89fb-6b00c1ec32e6</testCaseGuid>
+   <variable>
+      <defaultValue>'january 2018'</defaultValue>
+      <description></description>
+      <id>870c9b14-de84-4bb4-8775-794ab06557c6</id>
+      <masked>false</masked>
+      <name>startDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tittle1254'</defaultValue>
+      <description></description>
+      <id>3fa05302-2cd3-49cf-8168-5d94bfa6a92a</id>
+      <masked>false</masked>
+      <name>titleName</name>
+   </variable>
+   <variable>
+      <defaultValue>'US\r\n'</defaultValue>
+      <description></description>
+      <id>7b389e81-e697-4b86-9194-cd505091e8de</id>
+      <masked>false</masked>
+      <name>bU_Text</name>
+   </variable>
+</TestCaseEntity>

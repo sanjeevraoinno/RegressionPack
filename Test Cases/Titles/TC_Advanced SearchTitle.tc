@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>To verify that Titles(name of the Title) exists in the system</description>
-   <name>Navigation to Titles</name>
+   <name>TC_Advanced SearchTitle</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>273ee64d-6a39-416d-aa55-b7c5fc15ba17</testCaseGuid>
+   <testCaseGuid>f4e83c7b-4e17-49e4-ab50-6a6b1d24c383</testCaseGuid>
    <variable>
       <defaultValue>'Title_9'</defaultValue>
       <description></description>
-      <id>2e9407d8-7d50-422a-9aa6-54fcd29692fb</id>
+      <id>97e953e0-2605-42b9-8e9b-b6fb4eda4a48</id>
       <masked>false</masked>
-      <name>TitleName</name>
+      <name>titleName</name>
    </variable>
    <variable>
       <defaultValue>'Organization'</defaultValue>
       <description></description>
-      <id>bdc93675-1a90-425e-a23c-21a69e0430f4</id>
+      <id>fde78062-d97f-47d0-873f-ef4ece068328</id>
       <masked>false</masked>
-      <name>ORG</name>
+      <name>org</name>
    </variable>
    <variable>
       <defaultValue>'Titles'</defaultValue>
       <description></description>
-      <id>ddf13915-03ff-4441-b6c4-872da4dfe771</id>
+      <id>1bb9b8d9-3526-49d4-bb3c-3f7a44cb1796</id>
       <masked>false</masked>
-      <name>Titletxt</name>
+      <name>titleText</name>
    </variable>
 </TestCaseEntity>

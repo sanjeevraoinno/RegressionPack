@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_GeneralSearchTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92c307e7-25b4-4f09-8a5f-d98ffa25f083</testCaseGuid>
+   <variable>
+      <defaultValue>'Title_9'</defaultValue>
+      <description></description>
+      <id>573ed461-1b6e-43ef-9f4f-f463514f05e8</id>
+      <masked>false</masked>
+      <name>titleName</name>
+   </variable>
+</TestCaseEntity>

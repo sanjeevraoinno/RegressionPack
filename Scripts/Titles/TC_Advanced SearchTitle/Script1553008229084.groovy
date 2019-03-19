@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
 
-WebUI.callTestCase(findTestCase('Titles/Navigation to Titles'), [('TitleName') : 'Title_9', ('ORG') : 'Organization', ('Titletxt') : 'Titles'], 
+WebUI.callTestCase(findTestCase('Titles/TC_NavigationToTitles'), [('TitleName') : 'Title_9', ('ORG') : 'Organization', ('Titletxt') : 'Titles'], 
     FailureHandling.STOP_ON_FAILURE)
 
 'Clicking on advance search icon if given condition gets passed\r\n'
@@ -42,7 +42,7 @@ WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2
 'Selecting the equal icon\r\n'
 WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-WebUI.setText(findTestObject('Advanced Search objects/td_Value'), TitleName)
+WebUI.setText(findTestObject('Advanced Search objects/td_Value'), titleName)
 
 'Clicking on Apply Search button\r\n'
 WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
