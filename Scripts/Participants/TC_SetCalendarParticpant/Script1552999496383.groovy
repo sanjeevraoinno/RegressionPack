@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.callTestCase(findTestCase('Participants/Navigation to Participant'), [('PID') : 'Payee01', ('ORG') : 'Organization'
+WebUI.callTestCase(findTestCase('Participants/TC_NavigateParticipant'), [('PID') : 'Payee01', ('ORG') : 'Organization'
         , ('Part_txt') : 'Participants'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
@@ -26,7 +26,8 @@ WebUI.click(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
 
 WebUI.click(findTestObject('Login_Navigation_Logout Objects/Calendar_Period'))
 
-WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), Txt_calendar)
+WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), vCalendarText)
+WebUI.waitForPageLoad(5)
 
 Robot robot = new Robot()
 

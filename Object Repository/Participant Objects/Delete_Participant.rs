@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BU_dropdown</name>
+   <name>Delete_Participant</name>
    <tag></tag>
-   <elementGuidId>1d504997-3758-4e09-a742-f797640c12ee</elementGuidId>
+   <elementGuidId>245f9270-976c-4bf5-a91c-1d9aed90d61f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='US'])[1]/preceding::div[3]</value>
+         <value>//span[@class='sap-icon-delete comm-icon pointer delete__usage']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div/div/ul/li[@class=&quot;select2-search-field&quot;]/input[@type='text'])[4]</value>
+      <value>//span[@class='sap-icon-delete comm-icon pointer delete__usage']</value>
    </webElementProperties>
 </WebElementEntity>

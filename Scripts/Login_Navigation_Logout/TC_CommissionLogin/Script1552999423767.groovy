@@ -30,7 +30,7 @@ WebUI.maximizeWindow()
 //User can verify that whether login page has loaded or not  
 'Verifying login page has loaded correctly\r\n'
 boolean result = Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Navigation_Logout Objects/Header_homepage')), 
-    header_name)
+    vHeader_Name)
 
 //if (result == true)
 //{
@@ -65,7 +65,7 @@ WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/user
 */
 'Verifying Commissions has loaded correctly'
 Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Login_Navigation_Logout Objects/Manage_Organization')), 
-    Manager_org)
+    vManager_Org)
 
 WebUI.waitForPageLoad(3)
 

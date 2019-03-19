@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Commission Login</name>
+   <name>TC_CommissionLogin</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Verifying the Username</comment>
    <testCaseGuid>ee9d8fdb-f3e2-4815-88ea-59f6d1f03ce0</testCaseGuid>
    <variable>
       <defaultValue>'Sales Performance Home '</defaultValue>
       <description></description>
       <id>8969e0e4-c94c-4215-be81-168b7df942f1</id>
       <masked>false</masked>
-      <name>header_name</name>
+      <name>vHeader_Name</name>
    </variable>
    <variable>
       <defaultValue>'Manage Organization'</defaultValue>
       <description></description>
       <id>975ccd8b-94da-4d81-b17b-ea1d1a881689</id>
       <masked>false</masked>
-      <name>Manager_org</name>
+      <name>vManager_Org</name>
    </variable>
 </TestCaseEntity>

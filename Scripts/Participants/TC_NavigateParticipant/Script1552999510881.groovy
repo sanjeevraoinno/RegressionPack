@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
 
-WebUI.callTestCase(findTestCase('Login_Navigation_Logout/Commission Login'), [('header_name') : 'Sales Performance Home '
+WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLogin'), [('header_name') : 'Sales Performance Home '
         , ('Manager_org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Participant Objects/Icon_Organization'))
@@ -26,7 +26,7 @@ WebUI.waitForElementPresent(findTestObject('Participant Objects/Icon_Organizatio
 WebUI.click(findTestObject('Participant Objects/Icon_Organization'))
 
 'Verifying the linktext of Organization \r\n'
-Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Participant Objects/Organization')), ORG)
+Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Participant Objects/Organization')), vOrg)
 
 println('User is able to navigate to Administration tab')
 
@@ -38,5 +38,5 @@ WebUI.mouseOver(findTestObject('Participant Objects/Link_Participants'), Failure
 WebUI.click(findTestObject('Participant Objects/Link_Participants'))
 
 'Verifying the linktext of Participants '
-Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Participant Objects/Participants')), Part_txt)
+Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Participant Objects/Participants')), vParticipantText)
 

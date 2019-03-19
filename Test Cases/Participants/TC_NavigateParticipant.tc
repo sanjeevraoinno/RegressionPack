@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>To verify that Titles(name of the Title) exists in the system</description>
-   <name>Advanced Searchh Participant</name>
+   <name>TC_NavigateParticipant</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>672bc5b8-bc92-463a-a0af-d939f0956882</testCaseGuid>
-   <variable>
-      <defaultValue>'Payee01'</defaultValue>
-      <description></description>
-      <id>cb895ddc-7b68-4384-b58c-ae7dd7094ad7</id>
-      <masked>false</masked>
-      <name>PID</name>
-   </variable>
+   <testCaseGuid>e17be2ff-0e60-4c1a-96cb-97eb3bbf8b2d</testCaseGuid>
    <variable>
       <defaultValue>'Organization'</defaultValue>
       <description></description>
-      <id>62bc399d-8010-4cb9-bf55-062301cebdef</id>
+      <id>08ef405a-d46a-46a0-a3e9-da769e3251b6</id>
       <masked>false</masked>
-      <name>ORG</name>
+      <name>vOrg</name>
    </variable>
    <variable>
       <defaultValue>'Participants'</defaultValue>
       <description></description>
-      <id>1dcc6585-d6ef-45a1-90c7-602b637874b4</id>
+      <id>01946dfe-7f6e-4bb3-b7cf-d257b14e89b0</id>
       <masked>false</masked>
-      <name>Part_txt</name>
+      <name>vParticipantText</name>
    </variable>
 </TestCaseEntity>

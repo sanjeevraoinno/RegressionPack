@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_GeneralSearchParticipant</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9bb39724-ae30-412d-88c8-1c6bf5f688f4</testCaseGuid>
+   <variable>
+      <defaultValue>'MBell_G'</defaultValue>
+      <description></description>
+      <id>cab7793a-5e10-461e-bcb3-dc4e2ec8f677</id>
+      <masked>false</masked>
+      <name>vParticipantId</name>
+   </variable>
+</TestCaseEntity>

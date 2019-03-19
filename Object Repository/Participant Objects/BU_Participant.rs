@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Business unit Participant</name>
+   <name>BU_Participant</name>
    <tag></tag>
    <elementGuidId>13f8cd5a-79d1-4f02-aec6-96452058fec9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='s2id_businessUnitMap']/ul</value>
+         <key>BASIC</key>
+         <value>//td/div/div/ul[@class=&quot;select2-choices&quot;][1]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[3]/following::ul[1]</value>
+         <key>XPATH</key>
+         <value>//div[@id='s2id_businessUnitMap']/ul</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Business Unit'])[3]/following::ul[1]</value>
+      <value>//td/div/div/ul[@class=&quot;select2-choices&quot;][1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

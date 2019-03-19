@@ -4,10 +4,20 @@
    <name>Add_NewParticipant</name>
    <tag></tag>
    <elementGuidId>9442c8ff-95f5-40dc-81ee-4d333fcd6927</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Participant Summary'])[1]/following::span[2]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='summary-view']/h2/div/div/span</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -39,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;summary-view&quot;)/h2[1]/div[@class=&quot;tools&quot;]/div[@class=&quot;singleIconContainer&quot;]/span[@class=&quot;sap-icon-add pointer comm-icon create__usage&quot;]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Participant Summary'])[1]/following::span[2]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

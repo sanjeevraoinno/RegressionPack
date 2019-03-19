@@ -15,13 +15,19 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.callTestCase(findTestCase('Login_Navigation_Logout/Set Calendar'), [('Txt_calendar') : 'January 2010'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Participants/TC_SetCalendarParticpant'), [('Txt_calendar') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Participant Objects/Add_Participant'))
+if (WebUI.verifyElementClickable(findTestObject('Object Repository/Participant Objects/Add_NewParticipant'))) {
+    WebUI.click(findTestObject('Participant Objects/Add_Participant'))
+
+    println('Add new Participant icon is clicked')
+} else {
+    println('Failed to Add new Participant')
+}
 
 WebUI.click(findTestObject('Participant Objects/Calendar_Period_participant'))
 
-WebUI.setText(findTestObject('Participant Objects/Set_Start Calendar'), Participant_calendar)
+WebUI.setText(findTestObject('Participant Objects/Set_Start Calendar'), vParticipantCalendar)
 
 Robot robot = new Robot()
 
@@ -33,31 +39,19 @@ robot.keyRelease(KeyEvent.VK_ENTER)
 
 WebUI.click(findTestObject('Participant Objects/span_Ok'))
 
-WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), Payeeid)
+WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), vPayeeId)
 
 WebUI.click(findTestObject('Participant Objects/input_Prefix_prefix'))
 
-WebUI.setText(findTestObject('Participant Objects/input_Prefix_prefix'), Prefix)
+WebUI.setText(findTestObject('Participant Objects/input_Prefix_prefix'), vPrefix)
 
 WebUI.click(findTestObject('Participant Objects/input_First Name_firstName'))
 
-WebUI.setText(findTestObject('Participant Objects/input_First Name_firstName'), Firstname)
+WebUI.setText(findTestObject('Participant Objects/input_First Name_firstName'), vFirstName)
 
 WebUI.click(findTestObject('Participant Objects/input_(Required)_lastName'))
 
-WebUI.setText(findTestObject('Participant Objects/input_(Required)_lastName'), Lastname)
-
-WebUI.click(findTestObject('Participant Objects/Business unit Participant'))
-
-WebUI.setText(findTestObject('Participant Objects/Business unit Participant'), BU_txt)
-
-Robot robot1 = new Robot()
-
-robot1.keyPress(KeyEvent.VK_ENTER)
-
-Thread.sleep(2000)
-
-robot1.keyRelease(KeyEvent.VK_ENTER)
+WebUI.setText(findTestObject('Participant Objects/input_(Required)_lastName'), vLastName)
 
 WebUI.click(findTestObject('Participant Objects/Icon_Save'))
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Commission Logout</name>
+   <name>TC_CommissionLogout</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f3b659bf-06a2-4ea2-b5f6-9d6af33bd02d</testCaseGuid>
