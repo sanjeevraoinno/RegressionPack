@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AdvancedSearchPlan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51a1582f-2c46-4614-85b5-c7faa359443a</testCaseGuid>
+   <variable>
+      <defaultValue>'Quarterly NA Inbound Plan Sales Rep - 3 Elements - Element 1 Payout Trigger'</defaultValue>
+      <description></description>
+      <id>1b53fa61-c9ae-419d-8193-be32093323db</id>
+      <masked>false</masked>
+      <name>SerachString</name>
+   </variable>
+</TestCaseEntity>

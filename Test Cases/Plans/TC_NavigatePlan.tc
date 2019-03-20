@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_NavigatePlan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11a6e166-bff3-42fd-aa1e-c188383b3708</testCaseGuid>
+   <variable>
+      <defaultValue>'Plan Data'</defaultValue>
+      <description></description>
+      <id>c12c3a0d-82ff-4a10-b459-677300e35744</id>
+      <masked>false</masked>
+      <name>Plan_data</name>
+   </variable>
+   <variable>
+      <defaultValue>'Plans'</defaultValue>
+      <description></description>
+      <id>5a3de86e-fc05-4359-bcce-5f66654fbd06</id>
+      <masked>false</masked>
+      <name>Plan_txt</name>
+   </variable>
+</TestCaseEntity>

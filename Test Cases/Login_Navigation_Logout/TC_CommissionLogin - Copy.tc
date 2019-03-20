@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CommissionLogin - Copy</name>
+   <tag></tag>
+   <comment>Verifying the Username</comment>
+   <testCaseGuid>7d531b5b-2161-49d0-85b8-b3f583899a26</testCaseGuid>
+   <variable>
+      <defaultValue>'Sales Performance Home '</defaultValue>
+      <description></description>
+      <id>06c9f86c-b582-42e4-8c75-b18286504bf5</id>
+      <masked>false</masked>
+      <name>vHeader_Name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Manage Organization'</defaultValue>
+      <description></description>
+      <id>722bd499-1e75-4449-8157-7970a926d044</id>
+      <masked>false</masked>
+      <name>vManager_Org</name>
+   </variable>
+</TestCaseEntity>
