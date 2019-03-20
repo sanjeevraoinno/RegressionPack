@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Input_Name</name>
+   <tag></tag>
+   <elementGuidId>f0b66481-470d-4bab-ad76-1741ccc1dda1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//form[@class='adv-detail-section-padding']//input[@name='name']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//form[@class='adv-detail-section-padding']//input[@name='name']</value>
+   </webElementProperties>
+</WebElementEntity>

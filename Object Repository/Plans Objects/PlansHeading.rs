@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PlansHeading</name>
+   <tag></tag>
+   <elementGuidId>8f48f3cd-f479-4d44-b26c-13d16eba1dcf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='sectionhead']//h2[text()='Plans']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='sectionhead']//h2[text()='Plans']</value>
+   </webElementProperties>
+</WebElementEntity>

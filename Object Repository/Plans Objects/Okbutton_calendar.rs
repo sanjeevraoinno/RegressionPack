@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Okbutton_calendar</name>
+   <tag></tag>
+   <elementGuidId>4dbd7bf9-17e5-402d-8a5b-e1b7459d490d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@role='dialog']//button[@title='Ok']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@role='dialog']//button[@title='Ok']</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Input_Description</name>
+   <tag></tag>
+   <elementGuidId>15cff47f-1e3e-4ba0-a3f3-77cd6f65b1ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//form[@class='adv-detail-section-padding']//textarea[@name='ruleDescription']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//form[@class='adv-detail-section-padding']//textarea[@name='ruleDescription']</value>
+   </webElementProperties>
+</WebElementEntity>
