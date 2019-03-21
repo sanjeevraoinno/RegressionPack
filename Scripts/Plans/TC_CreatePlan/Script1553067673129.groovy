@@ -19,10 +19,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.testng.Assert as Assert
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('Plans/TC_NavigatePlan'), [('Plan_data') : 'Plan Data', ('Plan_txt') : 'Plans'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'), [('vHeader_Name') : 'Sales Performance Home '
+        , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Titles/TC_NavigationToTitles'), [('TitleName') : 'Title_9', ('ORG') : 'Organization', ('Titletxt') : 'Titles'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 KeywordLogger log = new KeywordLogger()
-
 
 // Verifying if the landing page is "Plans" page and creating a Plan accordingly
 String Pageheading_Expected = WebUI.getText(findTestObject('Object Repository/Plans Objects/PlansHeading'))

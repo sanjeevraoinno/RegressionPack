@@ -14,7 +14,7 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLogin'), [('vHeader_Name') : 'Sales Performance Home '
+WebUI.callTestCase(findTestCase('null'), [('vHeader_Name') : 'Sales Performance Home '
         , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
 KeywordLogger log = new KeywordLogger()

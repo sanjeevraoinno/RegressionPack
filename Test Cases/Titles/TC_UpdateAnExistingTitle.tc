@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_UpdateAnExistingTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85c8da2c-28d4-4621-adc2-cea34445fbe1</testCaseGuid>
+   <variable>
+      <defaultValue>'Changin Title Description update'</defaultValue>
+      <description></description>
+      <id>19ce2d19-d37f-474b-98f3-9a1ea981258d</id>
+      <masked>false</masked>
+      <name>updateDescription</name>
+   </variable>
+</TestCaseEntity>

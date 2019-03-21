@@ -1,3 +1,7 @@
+// Created by: Shiva
+// Description: Navigation to Titles workspace
+// Created date: 3/18/2019
+// Modified date:
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -16,8 +20,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
 
-WebUI.callTestCase(findTestCase('Login_Navigation_Logout/Commission Login'), [('header_name') : 'Sales Performance Home '
-        , ('Manager_org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'), [('vHeader_Name') : 'Sales Performance Home '
+        , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
 boolean org_tab_visisble = WebUI.verifyElementVisible(findTestObject('Titles Objects/Icon_Organization'))
 
@@ -55,6 +59,4 @@ if (title_visisbe == true) {
 } else {
     KeywordUtil.markFailed('title  is not visible')
 }
-
-//WebUI.callTestCase(findTestCase('Titles/TC_SetCalendarTitle'), [('Txt_calendar') : 'January 2018\r\n'], FailureHandling.STOP_ON_FAILURE)
 
