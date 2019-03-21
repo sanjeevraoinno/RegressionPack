@@ -18,16 +18,16 @@ import com.kms.katalon.core.util.KeywordUtil
 WebUI.callTestCase(findTestCase('Participants/TC_NavigateParticipant'), [('PID') : 'Payee01', ('ORG') : 'Organization'
         , ('Part_txt') : 'Participants'], FailureHandling.STOP_ON_FAILURE)
 
-if (WebUI.verifyElementClickable(findTestObject('Object Repository/Participant Objects/Gerneral search textbox'))) {
-    WebUI.waitForElementClickable(findTestObject('Object Repository/Participant Objects/Gerneral search textbox'), 100)
+if (WebUI.verifyElementClickable(findTestObject('General search Objects/Gerneral search textbox (1)'))) {
+    WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox (1)'), 100)
 
-    WebUI.click(findTestObject('Object Repository/Participant Objects/General_search_icon'))
+    WebUI.click(findTestObject('General search Objects/General_search_icon (1)'))
 
-    WebUI.click(findTestObject('Object Repository/Participant Objects/Gerneral search textbox'))
+    WebUI.click(findTestObject('General search Objects/Gerneral search textbox (1)'))
 
-    WebUI.setText(findTestObject('Object Repository/Participant Objects/Gerneral search textbox'), vParticipantId)
+    WebUI.setText(findTestObject('General search Objects/Gerneral search textbox (1)'), vParticipantId)
 	  
-	WebUI.click(findTestObject('Object Repository/Participant Objects/General_search_icon'))
+	WebUI.click(findTestObject('General search Objects/General_search_icon (1)'))
 	
 	KeywordUtil.markPassed('Participant is visible')
   	

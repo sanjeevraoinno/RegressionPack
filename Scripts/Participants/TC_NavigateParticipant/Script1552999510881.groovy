@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
 
-WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLogin'), [('header_name') : 'Sales Performance Home '
+WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLogin1234old'), [('header_name') : 'Sales Performance Home '
         , ('Manager_org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Participant Objects/Icon_Organization'))

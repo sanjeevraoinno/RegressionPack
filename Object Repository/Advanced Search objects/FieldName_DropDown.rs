@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//tr[@class='ember-view']/td[@style='width: auto;']/select[@class='ember-view ember-select']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

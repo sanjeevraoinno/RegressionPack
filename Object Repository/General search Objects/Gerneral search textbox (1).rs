@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AppySearch_button</name>
+   <name>Gerneral search textbox (1)</name>
    <tag></tag>
-   <elementGuidId>fde35b13-52ec-4e9d-9d3f-1895a00dce52</elementGuidId>
+   <elementGuidId>0e46adbd-55ca-4d22-87b4-f001117ce8c9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='apply']</value>
+         <value>//input[@id='spotlight-text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='apply']</value>
+      <value>//input[@id='spotlight-text']</value>
    </webElementProperties>
 </WebElementEntity>

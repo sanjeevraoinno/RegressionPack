@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Gerneral search textbox</name>
+   <name>Icon_PlanData</name>
    <tag></tag>
-   <elementGuidId>0e46adbd-55ca-4d22-87b4-f001117ce8c9</elementGuidId>
+   <elementGuidId>8fd2402d-6af7-4d04-a9d8-4ae361c6beb4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='spotlight-text']</value>
+         <value>//span[@class='sap-icon-legend cald-ui-menu-icon svelte-1vu4ly0']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='spotlight-text']</value>
+      <value>//span[@class='sap-icon-legend cald-ui-menu-icon svelte-1vu4ly0']
+</value>
    </webElementProperties>
 </WebElementEntity>

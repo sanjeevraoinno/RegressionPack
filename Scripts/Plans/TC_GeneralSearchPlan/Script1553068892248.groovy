@@ -15,15 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Plans/TC_NavigatePlan'), [('Plan_data') : 'Plan Data', ('Plan_txt') : 'Plans'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Plans Objects/Gerneral search textbox'), 100)
+WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox'), 100)
 
-WebUI.click(findTestObject('Plans Objects/General_search_icon'))
+WebUI.click(findTestObject('General search Objects/General_search_icon'))
 
-WebUI.click(findTestObject('Plans Objects/Gerneral search textbox'))
+WebUI.click(findTestObject('General search Objects/Gerneral search textbox'))
 
-WebUI.setText(findTestObject('Plans Objects/Gerneral search textbox'), planName)
+WebUI.setText(findTestObject('General search Objects/Gerneral search textbox'), planName)
 
-WebUI.click(findTestObject('Plans Objects/General_search_icon'))
+WebUI.click(findTestObject('General search Objects/General_search_icon'))
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()
 

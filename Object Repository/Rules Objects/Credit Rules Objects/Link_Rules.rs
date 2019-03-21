@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AppySearch_button</name>
+   <name>Link_Rules</name>
    <tag></tag>
-   <elementGuidId>fde35b13-52ec-4e9d-9d3f-1895a00dce52</elementGuidId>
+   <elementGuidId>906c76be-8574-4e78-85ad-a7117d8b4474</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='apply']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='apply']</value>
+      <value>//a[@href='#/rule/advRuleList/false']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Participant_Create</name>
+   <name>TC_NavigateRules</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5405121b-5851-4941-9117-7c42687d70dc</testCaseGuid>
+   <testCaseGuid>dcfd9ac9-43e9-476d-9c45-8f8856e8e9dc</testCaseGuid>
 </TestCaseEntity>
