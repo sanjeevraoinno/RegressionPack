@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Update participant</name>
+   <name>Popup_yes button</name>
    <tag></tag>
-   <elementGuidId>c37bf96c-ba96-4770-a381-edc9ecb6af54</elementGuidId>
+   <elementGuidId>7eed71c7-7868-49c0-b92f-dd7a709d24b1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])</value>
    </webElementProperties>
 </WebElementEntity>

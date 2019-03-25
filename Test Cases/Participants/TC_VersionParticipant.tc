@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_VersionParticipant</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1c527731-5e60-4655-bb88-fec551e3de56</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>d92e150d-4046-4dec-88d4-2bc51c71008e</id>
+      <masked>false</masked>
+      <name>vVersionCalendar</name>
+   </variable>
+</TestCaseEntity>

@@ -12,44 +12,33 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.junit.After as After
-import org.testng.Assert as Assert
-import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
+
+WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Clicking on advance search icon if given condition gets passed\r\n'
-if (WebUI.verifyElementClickable(findTestObject('Advanced Search objects/Advanced_searchtext'))) {
+if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
     WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
 
-    KeywordLogger log = new KeywordLogger()
-
-    'Clicking on fieldname text box\r\n'
     WebUI.click(findTestObject('Advanced Search objects/FieldName_DropDown'))
 
-    WebUI.scrollToElement(findTestObject('Advanced Search objects/Option_Participant_id'), 9)
+    WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Value'), 4)
 
-    WebUI.click(findTestObject('Advanced Search objects/Option_Participant_id'))
+    WebUI.click(findTestObject('Advanced Search objects/option_Value'))
 
     'Clicking on comparision text box\r\n'
     WebUI.click(findTestObject('Advanced Search objects/td_Comparision'))
 
     WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2)
 
-    'Selecting the equal icon'
+    'Selecting the equal icon\r\n'
     WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vPid)
+    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vDepositRule)
 
-    // String vApplysearch_Expected = WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/AppySearch_button'))
-    //if (vApplysearch_Expected == true) {
-    WebUI.click(findTestObject('Object Repository/Advanced Search objects/AppySearch_button'))
-
-    //  log.logPassed('Apply search button is clicked')
-    log.logPassed('Advanced search is performed') //} 
-    //else {
-    //log.logFailed('Failed to click Apply search button')
-    //}
+    'Clicking on Apply Search button\r\n'
+    WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
 } else {
-    log.logFailed('Failed to performe advanced search')
+    println('Failed to perform advance search')
 }
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Update participant</name>
+   <name>Version dropdown</name>
    <tag></tag>
-   <elementGuidId>c37bf96c-ba96-4770-a381-edc9ecb6af54</elementGuidId>
+   <elementGuidId>6a838198-bb17-449c-97b0-d974723e8828</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective From:'])[1]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective From:'])[1]/following::span[1]</value>
    </webElementProperties>
 </WebElementEntity>

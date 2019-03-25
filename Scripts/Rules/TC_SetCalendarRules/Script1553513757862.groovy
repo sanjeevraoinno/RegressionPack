@@ -12,26 +12,30 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (WebUI.verifyElementClickable(findTestObject('General search Objects/Gerneral search textbox'))) {
-    WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox'), 100)
+WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
 
-    WebUI.click(findTestObject('General search Objects/General_search_icon'))
+WebUI.mouseOver(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
 
-    WebUI.click(findTestObject('General search Objects/Gerneral search textbox'))
+WebUI.click(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
 
-    WebUI.setText(findTestObject('General search Objects/Gerneral search textbox'), vCreditRule)
+WebUI.click(findTestObject('Login_Navigation_Logout Objects/Calendar_Period'))
 
-    WebUI.click(findTestObject('General search Objects/General_search_icon'))
+WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), vCalendarText)
 
-    KeywordUtil.markPassed('credit rule is visible')
-} else {
-    KeywordUtil.markFailed('credit rule  is not visible')
-}
+WebUI.waitForPageLoad(10)
 
-CustomKeywords.'globalkeywords.record.RecordNotFound'()
+Robot robot = new Robot()
+
+robot.keyPress(KeyEvent.VK_ENTER)
+
+Thread.sleep(2000)
+
+robot.keyRelease(KeyEvent.VK_ENTER)
+
+WebUI.click(findTestObject('Login_Navigation_Logout Objects/span_Ok'))
 

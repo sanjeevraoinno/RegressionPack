@@ -12,26 +12,4 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-
-WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
-
-if (WebUI.verifyElementClickable(findTestObject('General search Objects/Gerneral search textbox'))) {
-    WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox'), 100)
-
-    WebUI.click(findTestObject('General search Objects/General_search_icon'))
-
-    WebUI.click(findTestObject('General search Objects/Gerneral search textbox'))
-
-    WebUI.setText(findTestObject('General search Objects/Gerneral search textbox'), vCreditRule)
-
-    WebUI.click(findTestObject('General search Objects/General_search_icon'))
-
-    KeywordUtil.markPassed('credit rule is visible')
-} else {
-    KeywordUtil.markFailed('credit rule  is not visible')
-}
-
-CustomKeywords.'globalkeywords.record.RecordNotFound'()
 

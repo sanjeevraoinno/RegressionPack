@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Update participant</name>
+   <name>Create_rule</name>
    <tag></tag>
-   <elementGuidId>c37bf96c-ba96-4770-a381-edc9ecb6af54</elementGuidId>
+   <elementGuidId>8cf120c7-68eb-4b3c-8651-2fde4feadf91</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Rules'])[2]/following::button[1]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rules'])[2]/following::button[1]</value>
    </webElementProperties>
 </WebElementEntity>

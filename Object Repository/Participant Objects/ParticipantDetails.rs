@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Update participant</name>
+   <name>ParticipantDetails</name>
    <tag></tag>
-   <elementGuidId>c37bf96c-ba96-4770-a381-edc9ecb6af54</elementGuidId>
+   <elementGuidId>a89f5b33-5899-4177-b2b2-d574831cc607</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Participant Details'])</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Participant Details'])</value>
    </webElementProperties>
 </WebElementEntity>

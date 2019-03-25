@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Update participant</name>
+   <name>VersionEffective_ok</name>
    <tag></tag>
-   <elementGuidId>c37bf96c-ba96-4770-a381-edc9ecb6af54</elementGuidId>
+   <elementGuidId>cdcedfe8-505c-4487-83f6-2a72731add54</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[@class='sap-icon-edit comm-icon pointer update__usage']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -6,15 +6,15 @@
    <elementGuidId>a25939fa-6c53-47ea-919c-539e2f68a4d4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::span[1]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Date:'])[1]/following::span[1]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::span[1]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

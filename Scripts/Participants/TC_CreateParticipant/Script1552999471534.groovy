@@ -18,11 +18,11 @@ import java.awt.event.KeyEvent as KeyEvent
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 WebUI.callTestCase(findTestCase('Participants/TC_SetCalendarParticpant'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
-
+KeywordLogger log = new KeywordLogger()
 if (WebUI.verifyElementClickable(findTestObject('Object Repository/Participant Objects/Add_NewParticipant'))) {
     WebUI.click(findTestObject('Participant Objects/Add_Participant'))
 
-    KeywordLogger log = new KeywordLogger()
+    
 
     WebUI.click(findTestObject('Participant Objects/Calendar_Period_participant'))
 
@@ -42,7 +42,7 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/Participant O
 
     String timestamp = (calendar.get(Calendar.HOUR_OF_DAY) + '') + calendar.get(Calendar.MINUTE)
 
-    WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), 'TF_Plan_' + timestamp)
+    WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), 'TF_Participant_' + timestamp)
 
     //WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), vPayeeId)
     WebUI.click(findTestObject('Participant Objects/input_Prefix_prefix'))

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_UpdateParticipant</name>
+   <name>TC_SetCalendarRules</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2cfeee21-c8e4-4975-a559-fd88fa87a831</testCaseGuid>
+   <testCaseGuid>64278eb1-5e2e-4a14-aea8-465878d4c01a</testCaseGuid>
    <variable>
-      <defaultValue>'MR.'</defaultValue>
+      <defaultValue>'January 2018'</defaultValue>
       <description></description>
-      <id>cf365408-b262-496e-9811-343f50780879</id>
+      <id>83f172af-f842-40a9-9b05-b0c5ef407ca1</id>
       <masked>false</masked>
-      <name>vUpdatePart</name>
+      <name>vCalendarText</name>
    </variable>
 </TestCaseEntity>

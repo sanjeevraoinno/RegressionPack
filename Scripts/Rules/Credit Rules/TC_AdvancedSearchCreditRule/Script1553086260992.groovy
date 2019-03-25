@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.
 if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
     WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
 
-    WebUI.doubleClick(findTestObject('Advanced Search objects/FieldName_DropDown'))
+    WebUI.click(findTestObject('Advanced Search objects/FieldName_DropDown'))
 
     WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Value'), 4)
 
@@ -42,7 +42,7 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Sear
     'Selecting the equal icon\r\n'
     WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), RuleName)
+    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vRuleName)
 
     'Clicking on Apply Search button\r\n'
     WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))

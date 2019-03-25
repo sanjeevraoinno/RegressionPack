@@ -10,20 +10,6 @@
       <description></description>
       <id>681cb254-107a-4410-9bfd-0360c0119ff8</id>
       <masked>false</masked>
-      <name>RuleName</name>
-   </variable>
-   <variable>
-      <defaultValue>'Plan Data'</defaultValue>
-      <description></description>
-      <id>6967bf6d-147c-42fc-920a-8c332d0d4a0b</id>
-      <masked>false</masked>
-      <name>Plan_data</name>
-   </variable>
-   <variable>
-      <defaultValue>'Rules'</defaultValue>
-      <description></description>
-      <id>3827b4f0-cddf-40cc-820c-3dcb36a85312</id>
-      <masked>false</masked>
-      <name>Rules_txt</name>
+      <name>vRuleName</name>
    </variable>
 </TestCaseEntity>
