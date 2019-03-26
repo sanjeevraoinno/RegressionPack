@@ -15,9 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.callTestCase(findTestCase('Participants/TC_NavigateParticipant'), [('vOrg') : 'Organization', ('vParticipantText') : 'Participants'], 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
 
 WebUI.mouseOver(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
@@ -30,14 +27,15 @@ WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'
 
 WebUI.waitForPageLoad(10)
 
-    Robot robot = new Robot()
+Robot robot = new Robot()
 
-    robot.keyPress(KeyEvent.VK_ENTER)
+robot.keyPress(KeyEvent.VK_ENTER)
 
-    Thread.sleep(2000)
+Thread.sleep(2000)
 
-    robot.keyRelease(KeyEvent.VK_ENTER)
+robot.keyRelease(KeyEvent.VK_ENTER)
 
+WebUI.waitForElementClickable(findTestObject('Login_Navigation_Logout Objects/span_Ok'), 5)
 
 WebUI.click(findTestObject('Login_Navigation_Logout Objects/span_Ok'))
 

@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9f52fb6c-1ac8-4454-a005-70a6bde23552</testCaseGuid>
+   <variable>
+      <defaultValue>'Shipping'</defaultValue>
+      <description></description>
+      <id>bc93ece0-9937-452b-94d5-f1dfee53a63d</id>
+      <masked>false</masked>
+      <name>vEventType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Demorule'</defaultValue>
+      <description></description>
+      <id>3becc18c-5bf3-4399-88ea-0696321423d9</id>
+      <masked>false</masked>
+      <name>vDemorule</name>
+   </variable>
+   <variable>
+      <defaultValue>'Credit Rule'</defaultValue>
+      <description></description>
+      <id>0a6f99e0-376a-48b4-a4ce-535a757dd6a6</id>
+      <masked>false</masked>
+      <name>vCreditrule</name>
+   </variable>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>354eb89a-7501-400c-abf5-345011b17888</id>
+      <masked>false</masked>
+      <name>vCalendar</name>
+   </variable>
 </TestCaseEntity>

@@ -15,8 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
 
 WebUI.mouseOver(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
@@ -37,5 +35,5 @@ Thread.sleep(2000)
 
 robot.keyRelease(KeyEvent.VK_ENTER)
 
-WebUI.click(findTestObject('Login_Navigation_Logout Objects/span_Ok'))
+WebUI.click(findTestObject('Rules Objects/Calendar_ok'))
 

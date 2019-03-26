@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Link_Rules</name>
+   <name>Calendar_ok</name>
    <tag></tag>
-   <elementGuidId>906c76be-8574-4e78-85ad-a7117d8b4474</elementGuidId>
+   <elementGuidId>b4651123-2ba0-4855-9548-67826bab2d50</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//a[@href='#/rule/advRuleList/false']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Date:'])[1]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@href='#/rule/advRuleList/false']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date:'])[1]/following::span[1]</value>
    </webElementProperties>
 </WebElementEntity>
