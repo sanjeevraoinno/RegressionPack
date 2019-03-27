@@ -1,6 +1,6 @@
  // Created by: Shiva
-// Description: Navigation to Titles workspace
-// Created date: 3/22/2019
+// Description: Navigation to Positions workspace
+// Created date: 3/18/2019
 // Modified date:
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -25,16 +25,17 @@ WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'
 
 WebUI.waitForPageLoad(10)
 
-boolean org_tab_visisble = WebUI.verifyElementVisible(findTestObject('Titles Objects/Icon_Organization'))
+boolean org_tab_visisble = WebUI.verifyElementVisible(findTestObject('PositionObjects/Icon_Organization'))
 
 if (org_tab_visisble == true) {
-    WebUI.mouseOver(findTestObject('Titles Objects/Icon_Organization'))
+    WebUI.mouseOver(findTestObject('PositionObjects/Icon_Organization'))
 
     'Clicking on Organization icon\r\n'
-    WebUI.click(findTestObject('Titles Objects/Icon_Organization'))
+    WebUI.click(findTestObject('PositionObjects/Organization'))
 
+    //
     'Verifying the linktext of Organization\r\n'
-    Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/Titles Objects/Organization')), ORG)
+    Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/PositionObjects/Organization')), ORG)
 
     println('User is able to navigate to Organization tab')
 } else {
@@ -42,25 +43,23 @@ if (org_tab_visisble == true) {
     KeywordUtil.markFailed('Organisation tab is not visible')
 }
 
-boolean title_visisbe = WebUI.verifyElementVisible(findTestObject('Titles Objects/Link_Titles'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/PositionObjects/PositionsLink'), 4)
 
-if (title_visisbe == true) {
-    'User able to find the Title worksapce link'
-    WebUI.waitForElementVisible(findTestObject('Titles Objects/Link_Titles'), 4)
+boolean position_visible = WebUI.verifyElementVisible(findTestObject('PositionObjects/PositionsLink'))
 
-    WebUI.mouseOver(findTestObject('Titles Objects/Link_Titles'), FailureHandling.STOP_ON_FAILURE)
+if (position_visible == true) {
+    'User able to find the Position worksapce link'
+    WebUI.mouseOver(findTestObject('Object Repository/PositionObjects/PositionsLink'), FailureHandling.STOP_ON_FAILURE)
 
-    'Clicking on Titles link\r\n\r\n'
-    WebUI.click(findTestObject('Titles Objects/Link_Titles'))
+    'Clicking on Positions link\r\n\r\n'
+    WebUI.click(findTestObject('Object Repository/PositionObjects/PositionsLink'))
 
-    'Verifying the linktext of Titles\r\n'
-    Assert.assertEquals(WebUI.getText(findTestObject('Titles Objects/TitlesHeading')), Titletxt)
+    'Verifying the linktext of Positions\r\n'
+    Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/PositionObjects/PositionsHeading')), Positiontxt)
 
-    KeywordUtil.markPassed('User is able to navigate Title Workspace' 
-		
-		//WebUI.callTestCase(findTestCase('Titles/TC_SetCalendarTitle'), [('Txt_calendar') : 'January 2018\r\n'], FailureHandling.STOP_ON_FAILURE)
-        )
+    KeywordUtil.markPassed('User is able to navigate Postios Workspace') 
+	
 } else {
-    KeywordUtil.markFailed('title  is not visible')
+    KeywordUtil.markFailed('Position is not visible')
 }
 

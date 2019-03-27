@@ -1,7 +1,8 @@
 // Created by: Shiva
 // Description: Creating a Title
-// Created date: 3/19/2019
-// Modified date: 3/26/2019
+// Created date: 3/23/2019
+// Modified date: 3/24/2019
+
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,8 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.testng.Assert as Assert
 
-WebUI.callTestCase(findTestCase('Titles/TC_NavigationToTitles'), [('TitleName') : 'Title_9', ('ORG') : 'Organization', ('Titletxt') : 'Titles'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Positions/TC_NavigationToPositions'), [('PositionName') : 'Title_9', ('ORG') : 'Organization'
+        , ('Positiontxt') : 'Positions'], FailureHandling.STOP_ON_FAILURE)
 
 'Clicking on advance search icon if given condition gets passed\r\n'
 if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
@@ -49,7 +50,7 @@ WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2
 'Selecting the equal icon\r\n'
 WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-WebUI.setText(findTestObject('Advanced Search objects/td_Value'), titleName)
+WebUI.setText(findTestObject('Advanced Search objects/td_Value'), PositionName)
 
 'Clicking on Apply Search button\r\n'
 WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))

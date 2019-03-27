@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_GeneralSearchPosition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>358c90ee-e01c-432d-8c00-68161bb38dbc</testCaseGuid>
+   <variable>
+      <defaultValue>'Pos_09'</defaultValue>
+      <description></description>
+      <id>946806e2-90f9-44d1-870e-5ea0c78d36fa</id>
+      <masked>false</masked>
+      <name>PositionName</name>
+   </variable>
+</TestCaseEntity>

@@ -21,14 +21,17 @@ KeywordLogger log = new KeywordLogger()
 if (gSearchicon) {
     WebUI.waitForElementClickable(findTestObject('Titles Objects/General Search/General_search_icon'), 15)
 
+	 'Click on the General Seacrh icon'
     WebUI.click(findTestObject('Titles Objects/General Search/General_search_icon'))
-
+	
+	'Click on the General Search Texbox'
     WebUI.click(findTestObject('Titles Objects/General Search/Gerneral_search_textbox'))
 
+	'Searching the  Name of the Title'
     WebUI.setText(findTestObject('Titles Objects/General Search/Gerneral_search_textbox'), titleName)
 
     WebUI.click(findTestObject('Titles Objects/General Search/General_search_icon'))
-
+    'Validing when recond not found'
     CustomKeywords.'globalkeywords.record.RecordNotFound'()
 	 
 	log.logPassed("Title search is successful")
