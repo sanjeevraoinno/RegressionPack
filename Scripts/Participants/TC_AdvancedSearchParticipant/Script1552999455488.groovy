@@ -16,6 +16,9 @@ import org.junit.After as After
 import org.testng.Assert as Assert
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
+WebUI.callTestCase(findTestCase('Participants/TC_NavigateParticipant'), [('vOrg') : 'Organization', ('vParticipantText') : 'Participants'], 
+    FailureHandling.STOP_ON_FAILURE)
+
 'Clicking on advance search icon if given condition gets passed\r\n'
 if (WebUI.verifyElementClickable(findTestObject('Advanced Search objects/Advanced_searchtext'))) {
     WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
@@ -44,8 +47,8 @@ if (WebUI.verifyElementClickable(findTestObject('Advanced Search objects/Advance
     WebUI.click(findTestObject('Object Repository/Advanced Search objects/AppySearch_button'))
 
     //  log.logPassed('Apply search button is clicked')
-    log.logPassed('Advanced search is performed') //} 
-    //else {
+    log.logPassed('Advanced search is performed' //} 
+        ) //else {
     //log.logFailed('Failed to click Apply search button')
     //}
 } else {

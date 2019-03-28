@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VersionEffective_ok</name>
+   <name>Icon_EditRules</name>
    <tag></tag>
-   <elementGuidId>cdcedfe8-505c-4487-83f6-2a72731add54</elementGuidId>
+   <elementGuidId>095aacd3-3af5-4559-9e35-8c47d8d39937</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Version'])</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Version'])</value>
    </webElementProperties>
 </WebElementEntity>

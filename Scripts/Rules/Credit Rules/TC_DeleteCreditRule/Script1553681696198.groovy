@@ -15,29 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Clicking on advance search icon if given condition gets passed\r\n'
-if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
-    WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
+WebUI.callTestCase(findTestCase('Rules/TC_SetCalendarRules'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.delay(5)
+WebUI.callTestCase(findTestCase('Rules/Credit Rules/TC_AdvancedSearchCreditRule'), [('vRuleName') : 'TF_CreditRule_1113'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.selectOptionByIndex(findTestObject('Advanced Search objects/FieldName_DropDown'), 3)
+WebUI.check(findTestObject('Rules Objects/input_Checkbox_Rules'))
 
-    'Clicking on comparision text box\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/td_Comparision'))
+WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Create New_adv_rule_del_btn'))
 
-    WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2)
-
-    'Selecting the equal icon\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
-
-    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vDepositRule)
-
-    'Clicking on Apply Search button\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
-} else {
-    println('Failed to perform advance search')
-}
-
-CustomKeywords.'globalkeywords.record.RecordNotFound'()
+WebUI.callTestCase(findTestCase('Rules/Credit Rules/TC_GeneralSearchCreditRules'), [('vCreditRule') : 'TF_CreditRule_1113'], 
+    FailureHandling.STOP_ON_FAILURE)
 

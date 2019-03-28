@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_UpdateCreditRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95f46bf4-1ddc-4e78-bbd3-3d94784d75f2</testCaseGuid>
+   <variable>
+      <defaultValue>'NA'</defaultValue>
+      <description></description>
+      <id>62ca801e-a6a3-4c2e-ad1e-a04301fd64af</id>
+      <masked>false</masked>
+      <name>vBUTxt</name>
+   </variable>
+</TestCaseEntity>

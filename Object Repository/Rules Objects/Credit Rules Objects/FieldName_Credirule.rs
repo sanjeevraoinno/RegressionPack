@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VersionEffective_ok</name>
+   <name>FieldName_Credirule</name>
    <tag></tag>
-   <elementGuidId>cdcedfe8-505c-4487-83f6-2a72731add54</elementGuidId>
+   <elementGuidId>b8dc9ee5-e7ce-4f09-8a0f-dcba83b213e4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Value'])[1]/following::select[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Value'])[1]/following::select[1]</value>
    </webElementProperties>
 </WebElementEntity>

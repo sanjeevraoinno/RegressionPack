@@ -20,19 +20,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import org.junit.After as After
+import org.openqa.selenium.support.ui.Select as Select
 import org.testng.Assert as Assert
-
-WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
 
 'Clicking on advance search icon if given condition gets passed\r\n'
 if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
     WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
 
-    WebUI.click(findTestObject('Advanced Search objects/FieldName_DropDown'))
+    WebUI.delay(5)
 
-    WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Value'), 4)
-
-    WebUI.click(findTestObject('Advanced Search objects/option_Value'))
+    WebUI.selectOptionByIndex(findTestObject('Advanced Search objects/FieldName_DropDown'), 3)
 
     'Clicking on comparision text box\r\n'
     WebUI.click(findTestObject('Advanced Search objects/td_Comparision'))

@@ -3,15 +3,11 @@
    <description></description>
    <name>FieldName_DropDown</name>
    <tag></tag>
-   <elementGuidId>9839d670-83be-48c8-9e6b-85c9ca2406d1</elementGuidId>
+   <elementGuidId>591100dc-0445-451d-bdc2-39aaf055eb22</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//tr[@class='ember-view']/td[@style='width: auto;']/select[@class='ember-view ember-select']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Field Name'])[2]/preceding::select[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tr[@class='ember-view']/td[@style='width: auto;']/select[@class='ember-view ember-select']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Field Name'])[2]/preceding::select[2]</value>
    </webElementProperties>
 </WebElementEntity>

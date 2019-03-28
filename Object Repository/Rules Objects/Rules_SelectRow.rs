@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VersionEffective_ok</name>
+   <name>Rules_SelectRow</name>
    <tag></tag>
-   <elementGuidId>cdcedfe8-505c-4487-83f6-2a72731add54</elementGuidId>
+   <elementGuidId>a3f3f91d-359a-4239-a1fb-7118380fe7c8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective End Date'])[3]/following::td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Choose an Effective Start and End Date'])[1]/following::span[7]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective End Date'])[3]/following::td[1]</value>
    </webElementProperties>
 </WebElementEntity>

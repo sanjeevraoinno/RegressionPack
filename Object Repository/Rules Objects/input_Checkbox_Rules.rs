@@ -1,70 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>b</name>
+   <name>input_Checkbox_Rules</name>
    <tag></tag>
-   <elementGuidId>401cfe95-58d2-4f24-8e9d-dfbb03219a3f</elementGuidId>
+   <elementGuidId>d4085e09-5d6d-431f-81d7-512d5f1fb5cc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='s2id_ruleType']/a/span[2]/b</value>
+         <value>//input[@name='ruledtheadcheckbox']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;s2id_ruleType&quot;)/a[@class=&quot;select2-choice&quot;]/span[@class=&quot;select2-arrow&quot;]/b[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Variables'])[1]/following::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>b</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>role</name>
+      <name>name</name>
       <type>Main</type>
-      <value>presentation</value>
+      <value>ruledtheadcheckbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;s2id_ruleType&quot;)/a[@class=&quot;select2-choice&quot;]/span[@class=&quot;select2-arrow&quot;]/b[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Variables'])[1]/following::input[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <value>//input[@name='ruledtheadcheckbox']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='s2id_ruleType']/a/span[2]/b</value>
+      <value>//div[@id='adv_rule_table_header']/div/div/table/thead/tr/th/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Credit Rule'])[1]/following::b[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Variables'])[1]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Type:'])[1]/following::b[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Territories'])[1]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective From:'])[1]/preceding::b[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Type'])[3]/preceding::input[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/preceding::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//td[2]/div/a/span[2]/b</value>
+      <value>//th/input</value>
    </webElementXpaths>
 </WebElementEntity>

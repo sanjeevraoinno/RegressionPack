@@ -35,7 +35,7 @@ if (ManagePlans_Expected.equalsIgnoreCase(ManagePlans_ActualText)) {
     log.logFailed('Not able to find the Manage Plans Rules ...test case failed')
 }
 
-String ruleExpected = WebUI.getWindowTitle()
+String ruleExpected = WebUI.getText(findTestObject('Object Repository/Rules Objects/Rules_object'))
 
 String ruleActual = 'Rules'
 
@@ -80,19 +80,27 @@ if (ruleExpected.equalsIgnoreCase(ruleActual)) {
 
     String timestamp = (calendar.get(Calendar.HOUR_OF_DAY) + '') + calendar.get(Calendar.MINUTE)
 
-    WebUI.setText(findTestObject('Participant Objects/input_(Required)_payeeId'), 'TF_CreditRule_' + timestamp)
+    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/input_Name_ruleName'), 'TF_CreditRule_' + timestamp)
 
-    WebUI.scrollToPosition(1, 1)
+    WebUI.scrollToPosition(1, 0)
 
-    WebUI.mouseOver(findTestObject('Rules Objects/Credit Rules Objects/Event Type_choices'))
+    WebUI.mouseOver(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'))
 
-    WebUI.waitForElementClickable(findTestObject('Rules Objects/Credit Rules Objects/Event Type_choices'), 5)
+    WebUI.waitForElementPresent(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'), 10)
 
-    WebUI.doubleClick(findTestObject('Rules Objects/Credit Rules Objects/Event Type_choices'))
+    WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'))
 
-    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/Event Type_choices'), vEventType)
+    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'), vEventType)
 
-    WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Save'))
+	Robot robot2 = new Robot()
+	
+		robot2.keyPress(KeyEvent.VK_ENTER)
+	
+		Thread.sleep(2000)
+	
+		robot2.keyRelease(KeyEvent.VK_ENTER)
+    
+		WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Save'))
 
     log.logPassed('Created Credit Rule')
 } else {

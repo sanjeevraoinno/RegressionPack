@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>17e46851-03a6-46d1-95d6-05ef21a438b3</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'TF_CreditRule_1113'</defaultValue>
       <description></description>
       <id>38bba99a-cd8a-4767-a6d0-9b4157d3dd9d</id>
       <masked>false</masked>

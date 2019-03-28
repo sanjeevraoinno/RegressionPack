@@ -13,9 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-
-WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (WebUI.verifyElementClickable(findTestObject('General search Objects/Gerneral search textbox'))) {
     WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox'), 100)

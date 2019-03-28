@@ -47,3 +47,26 @@ KeywordLogger log = new KeywordLogger()
 WebUI.mouseOver(findTestObject('Participant Objects/Icon_Organization'))
 
 WebUI.waitForElementPresent(findTestObject('Participant Objects/Icon_Organization'), 1)
+
+
+'Clicking on Organization icon\r\n'
+WebUI.click(findTestObject('Participant Objects/Icon_Organization'))
+
+String ManageParticipant_Expected = WebUI.getText(findTestObject('Object Repository/Participant Objects/Organization'))
+
+String ManageParticipant_ActualText = 'Organization'
+
+if (ManageParticipant_Expected.equalsIgnoreCase(ManageParticipant_ActualText)) {
+	
+
+	WebUI.waitForElementVisible(findTestObject('Participant Objects/Link_Participants'), 1)
+
+	WebUI.mouseOver(findTestObject('Participant Objects/Link_Participants'), FailureHandling.STOP_ON_FAILURE)
+
+	'Clicking on Participants link \r\n'
+	WebUI.click(findTestObject('Participant Objects/Link_Participants'))
+
+	log.logPassed('On the Particiapnt workspace')
+} else {
+	log.logFailed('Not able to find the Participant workspace ...test case failed')
+}

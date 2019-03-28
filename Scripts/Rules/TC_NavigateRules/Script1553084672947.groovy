@@ -16,3 +16,19 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'), [('vHeader_Name') : 'Sales Performance Home '
         , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
+
+KeywordLogger log = new KeywordLogger()
+
+String ManagePlans_Expected = WebUI.getText(findTestObject('Object Repository/Plans Objects/ManagePlansText'))
+
+String ManagePlans_ActualText = 'Manage Plans'
+
+if (ManagePlans_Expected.equalsIgnoreCase(ManagePlans_ActualText)) {
+	WebUI.click(findTestObject('Object Repository/Rules Objects/Credit Rules Objects/Icon_PlanData'))
+
+	WebUI.click(findTestObject('Object Repository/Rules Objects/Credit Rules Objects/Link_Rules'))
+
+	log.logPassed('On the Manage Plans Rules')
+} else {
+	log.logFailed('Not able to find the Manage Plans Rules ...test case failed')
+}
