@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>9bb36cb0-ce2b-4412-969b-1281ec1431e1</testCaseGuid>
    <variable>
-      <defaultValue>'HC Mgr Deposit Rule_G'</defaultValue>
+      <defaultValue>'TF_DepositRule_1722'</defaultValue>
       <description></description>
       <id>3fa8eafb-13c3-42c2-b45d-8ede5a38097e</id>
       <masked>false</masked>

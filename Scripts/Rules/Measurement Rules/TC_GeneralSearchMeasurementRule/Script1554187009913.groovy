@@ -12,29 +12,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-'Clicking on advance search icon if given condition gets passed\r\n'
-if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
-    WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
+WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.delay(5)
+if (WebUI.verifyElementClickable(findTestObject('General search Objects/Gerneral search textbox'))) {
+    WebUI.waitForElementClickable(findTestObject('General search Objects/Gerneral search textbox'), 100)
 
-    WebUI.selectOptionByIndex(findTestObject('Advanced Search objects/FieldName_DropDown'), 3)
+    WebUI.click(findTestObject('General search Objects/General_search_icon'))
 
-    'Clicking on comparision text box\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/td_Comparision'))
+    WebUI.click(findTestObject('General search Objects/Gerneral search textbox'))
 
-    WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2)
+    WebUI.setText(findTestObject('General search Objects/Gerneral search textbox'), vMeasurementRule)
 
-    'Selecting the equal icon\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
+    WebUI.click(findTestObject('General search Objects/General_search_icon'))
 
-    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vDepositRule)
-
-    'Clicking on Apply Search button\r\n'
-    WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
+    KeywordUtil.markPassed('Deposit rule is visible')
 } else {
-    println('Failed to perform advance search')
+    KeywordUtil.markFailed('Deposit rule  is not visible')
 }
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_NewVersionCreditRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36ed87d3-a080-41d7-a592-f29cf5b118c2</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>1419635a-4961-4455-9f92-ad697711ef52</id>
+      <masked>false</masked>
+      <name>vCreditCalendar</name>
+   </variable>
+</TestCaseEntity>

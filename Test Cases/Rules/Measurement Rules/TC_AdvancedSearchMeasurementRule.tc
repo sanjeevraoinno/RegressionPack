@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AdvancedSearchMeasurementRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7162c4e-46e7-484e-9870-b437c850b958</testCaseGuid>
+   <variable>
+      <defaultValue>'HC Mgr Primary Measurement Rule_G'</defaultValue>
+      <description></description>
+      <id>684fb70d-e0d5-45f7-84c7-608cef37610f</id>
+      <masked>false</masked>
+      <name>vMeasurementRule</name>
+   </variable>
+</TestCaseEntity>

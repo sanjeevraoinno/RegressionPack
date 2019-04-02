@@ -12,32 +12,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.awt.Robot as Robot
-import java.awt.event.KeyEvent as KeyEvent
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
+WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
+KeywordLogger log = new KeywordLogger()
 
-WebUI.click(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
+WebUI.callTestCase(findTestCase('Rules/TC_SetCalendarRules'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Login_Navigation_Logout Objects/Calendar_Period'))
+WebUI.callTestCase(findTestCase('Rules/Deposit Rules/TC_AdvancedSearchDepositRule'), [('vDepositRule') : 'TF_DepositRule_1238'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), 5)
+if (WebUI.getText(findTestObject('Object Repository/Rules Objects/Rules_object'))) {
+    WebUI.check(findTestObject('Rules Objects/input_Checkbox_Rules'))
 
-WebUI.delay(2)
+    WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Create New_adv_rule_del_btn'))
 
-WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), vCalendarText)
-
-WebUI.waitForPageLoad(10)
-
-Robot robot = new Robot()
-
-robot.keyPress(KeyEvent.VK_ENTER)
-
-Thread.sleep(2000)
-
-robot.keyRelease(KeyEvent.VK_ENTER)
-
-WebUI.click(findTestObject('Rules Objects/Calendar_ok'))
+    log.logPassed('Deleted Credit Rule')
+} else {
+    log.logFailed('Not able to Delete credit rule ...test case failed')
+}
 

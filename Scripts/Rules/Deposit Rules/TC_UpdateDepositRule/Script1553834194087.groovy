@@ -23,11 +23,13 @@ KeywordLogger log = new KeywordLogger()
 
 WebUI.callTestCase(findTestCase('Rules/TC_SetCalendarRules'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Rules/Credit Rules/TC_AdvancedSearchCreditRule'), [('vRuleName') : 'TF_CreditRule_1058'], 
+WebUI.callTestCase(findTestCase('Rules/Deposit Rules/TC_AdvancedSearchDepositRule'), [('vDepositRule') : 'TF_DepositRule_1238'], 
     FailureHandling.STOP_ON_FAILURE)
 
 if (WebUI.getText(findTestObject('Object Repository/Rules Objects/Rules_object'))) {
     WebUI.click(findTestObject('Rules Objects/Rules_SelectRow'))
+
+    WebUI.waitForElementClickable(findTestObject('Rules Objects/Icon_EditRules'), 5)
 
     WebUI.delay(5)
 
@@ -64,6 +66,8 @@ if (WebUI.getText(findTestObject('Object Repository/Rules Objects/Rules_object')
     WebUI.mouseOver(findTestObject('Rules Objects/Credit Rules Objects/button_Save'))
 
     WebUI.waitForElementVisible(findTestObject('Rules Objects/Credit Rules Objects/button_Save'), 10)
+
+    WebUI.delay(3)
 
     WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Save'))
 

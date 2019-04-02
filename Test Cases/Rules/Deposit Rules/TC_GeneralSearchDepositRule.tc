@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>e2da2aa3-09da-4e98-b2c5-e5e8d9267d3d</testCaseGuid>
    <variable>
-      <defaultValue>'Deposit'</defaultValue>
+      <defaultValue>'TF_DepositRule'</defaultValue>
       <description></description>
       <id>aa56242f-1354-4199-a036-d4162104a3d9</id>
       <masked>false</masked>

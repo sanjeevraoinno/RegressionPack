@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_UpdateDepositRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cce9a9f9-64e9-4412-9b68-67f3186ad8f0</testCaseGuid>
+   <variable>
+      <defaultValue>'EU'</defaultValue>
+      <description></description>
+      <id>3f34e5be-4ddc-430e-8b33-1118a6efdcce</id>
+      <masked>false</masked>
+      <name>vBUTxt</name>
+   </variable>
+</TestCaseEntity>

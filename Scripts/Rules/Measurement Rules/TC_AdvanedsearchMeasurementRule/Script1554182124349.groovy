@@ -12,32 +12,4 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.awt.Robot as Robot
-import java.awt.event.KeyEvent as KeyEvent
-
-WebUI.waitForElementVisible(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'), 3)
-
-WebUI.mouseOver(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
-
-WebUI.click(findTestObject('Login_Navigation_Logout Objects/Icon_Calendar'))
-
-WebUI.click(findTestObject('Login_Navigation_Logout Objects/Calendar_Period'))
-
-WebUI.waitForElementPresent(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), 5)
-
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Login_Navigation_Logout Objects/Set Calendar Text'), vCalendarText)
-
-WebUI.waitForPageLoad(10)
-
-Robot robot = new Robot()
-
-robot.keyPress(KeyEvent.VK_ENTER)
-
-Thread.sleep(2000)
-
-robot.keyRelease(KeyEvent.VK_ENTER)
-
-WebUI.click(findTestObject('Rules Objects/Calendar_ok'))
 

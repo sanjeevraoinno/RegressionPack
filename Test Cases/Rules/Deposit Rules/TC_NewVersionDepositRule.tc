@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_NewVersionDepositRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>22c11440-bcab-42b5-a8bb-b27e609a154b</testCaseGuid>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>b3033420-b989-423e-ae3c-2bb9f067becc</id>
+      <masked>false</masked>
+      <name>vDepositCalendar</name>
+   </variable>
+</TestCaseEntity>

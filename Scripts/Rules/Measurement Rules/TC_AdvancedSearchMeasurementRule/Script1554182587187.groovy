@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Rules/TC_NavigateRules'), [:], FailureHandling.STOP_ON_FAILURE)
+
 'Clicking on advance search icon if given condition gets passed\r\n'
 if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Search objects/Advanced_searchtext'))) {
     WebUI.click(findTestObject('Advanced Search objects/Icon_Advanced Search'))
@@ -29,7 +31,7 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/Advanced Sear
     'Selecting the equal icon\r\n'
     WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vDepositRule)
+    WebUI.setText(findTestObject('Advanced Search objects/td_Value'), vMeasurementRule)
 
     'Clicking on Apply Search button\r\n'
     WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))

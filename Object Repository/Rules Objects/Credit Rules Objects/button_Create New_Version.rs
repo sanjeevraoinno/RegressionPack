@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Name_ruleName</name>
+   <name>button_Create New_Version</name>
    <tag></tag>
-   <elementGuidId>15570086-f98d-4e9c-b750-9ede6f257e30</elementGuidId>
+   <elementGuidId>413177ef-3585-40de-acee-603184f98c95</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ember2983']</value>
+         <key>BASIC</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Create New'])[1]/following::button[3]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[5]/following::input[1]</value>
+         <key>XPATH</key>
+         <value>(//button[@name='adv_rule_copy_btn'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,77 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>ember2983</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>ember-view ember-text-field w30 required</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ruleName</value>
+      <value>adv_rule_copy_btn</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-sm btn-default cald_3D_button_default adv-delete-btn adv-rule-list-btn</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ember-action</name>
+      <type>Main</type>
+      <value>2063</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Edit/Add Versions</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[5]/following::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create New'])[1]/following::button[3]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//input[@id='ember2983']</value>
+      <value>(//button[@name='adv_rule_copy_btn'])[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='adv_rule_basic']/div/blockquote/form/table/tbody/tr[3]/td/input</value>
+      <value>//div[@id='AdvRuleActionMenuGlobal']/div/button[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[5]/following::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create New'])[1]/following::button[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Business Unit'])[4]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rules'])[2]/following::button[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No matches found'])[7]/preceding::input[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Formulas'])[1]/preceding::button[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plan Components'])[1]/preceding::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//form/table/tbody/tr[3]/td/input</value>
+      <value>//button[4]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -40,7 +40,7 @@ String ruleExpected = WebUI.getText(findTestObject('Object Repository/Rules Obje
 String ruleActual = 'Rules'
 
 if (ruleExpected.equalsIgnoreCase(ruleActual)) {
-    WebUI.callTestCase(findTestCase('Rules/TC_SetCalendarRules'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Rules/TC_SetCalendarRules'), [('vCalendarText') : 'January 2018'], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/Create_rule'))
 
@@ -50,7 +50,7 @@ if (ruleExpected.equalsIgnoreCase(ruleActual)) {
 
     WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/select Rule_dropdown'))
 
-    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/select Rule_dropdown'), vCreditrule)
+    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/select Rule_dropdown'), vDepositRule)
 
     Robot robot = new Robot()
 
@@ -80,30 +80,44 @@ if (ruleExpected.equalsIgnoreCase(ruleActual)) {
 
     String timestamp = (calendar.get(Calendar.HOUR_OF_DAY) + '') + calendar.get(Calendar.MINUTE)
 
-    WebUI.setText(findTestObject('Rules Objects/input_Name_ruleName'), 'TF_CreditRule_' + timestamp)
+    WebUI.setText(findTestObject('Rules Objects/input_Name_ruleName'), 'TF_DepositRule_' + timestamp)
 
     WebUI.scrollToPosition(1, 0)
 
-    WebUI.mouseOver(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'))
+    WebUI.delay(5)
 
-    WebUI.waitForElementPresent(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'), 10)
+    WebUI.mouseOver(findTestObject('Rules Objects/Amount_space'))
 
-    WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'))
+    WebUI.click(findTestObject('Rules Objects/Amount_space'))
 
-    WebUI.setText(findTestObject('Rules Objects/Credit Rules Objects/EventTypes_text'), vEventType)
+    WebUI.setText(findTestObject('Rules Objects/Deposit Rules objects/Span_Amount Deposit rule'), vAmount)
 
-    Robot robot2 = new Robot()
+    WebUI.delay(5)
 
-    robot2.keyPress(KeyEvent.VK_ENTER)
+    WebUI.click(findTestObject('Rules Objects/Deposit Rules objects/ul_USDpercentquantityinteger'))
 
-    Thread.sleep(2000)
+    WebUI.waitForElementClickable(findTestObject('Rules Objects/Deposit Rules objects/Select earning code'), 10)
 
-    robot2.keyRelease(KeyEvent.VK_ENTER)
+    WebUI.click(findTestObject('Rules Objects/Deposit Rules objects/Select earning code'))
+
+    WebUI.scrollToElement(findTestObject('Rules Objects/Option_commission EC'), 5)
+
+    WebUI.click(findTestObject('Rules Objects/Option_commission EC'))
+
+    WebUI.waitForElementClickable(findTestObject('Rules Objects/Deposit Rules objects/select Earning group'), 10)
+
+    WebUI.click(findTestObject('Rules Objects/Deposit Rules objects/select Earning group'))
+
+    WebUI.scrollToElement(findTestObject('Rules Objects/Option_commission_EG'), 10)
+
+    WebUI.click(findTestObject('Rules Objects/Option_commission_EG'))
+
+    WebUI.waitForElementClickable(findTestObject('Rules Objects/Credit Rules Objects/button_Save'), 10)
 
     WebUI.click(findTestObject('Rules Objects/Credit Rules Objects/button_Save'))
-
-    log.logPassed('Created Credit Rule')
+ log.logPassed('Created Deposit Rule')
 } else {
-    log.logFailed('Not able to Create credit rule ...test case failed')
+    log.logFailed('Not able to create Deposit rule ...test case failed')
 }
+
 

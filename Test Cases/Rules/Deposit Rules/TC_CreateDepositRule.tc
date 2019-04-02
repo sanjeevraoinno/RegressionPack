@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CreateDepositRule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8adde942-3e53-47c8-b309-a296a4ff9f1d</testCaseGuid>
+   <variable>
+      <defaultValue>'Deposit Rule'</defaultValue>
+      <description></description>
+      <id>579e447b-8d7d-4b45-a774-73a5d3a23ffb</id>
+      <masked>false</masked>
+      <name>vDepositRule</name>
+   </variable>
+   <variable>
+      <defaultValue>'January 2018'</defaultValue>
+      <description></description>
+      <id>a45bd863-d5fb-419b-8915-def03bf93de9</id>
+      <masked>false</masked>
+      <name>vCalendar</name>
+   </variable>
+   <variable>
+      <defaultValue>'1000'</defaultValue>
+      <description></description>
+      <id>41d8a75f-ec40-4e4d-8055-a72322385ef4</id>
+      <masked>false</masked>
+      <name>vAmount</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>14db7fa0-56b1-4248-9e68-c0a32a8772d8</id>
+      <masked>false</masked>
+      <name>vCommission</name>
+   </variable>
+</TestCaseEntity>
