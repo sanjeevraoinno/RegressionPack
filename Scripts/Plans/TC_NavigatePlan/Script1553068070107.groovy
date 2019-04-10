@@ -14,23 +14,22 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-WebUI.callTestCase(findTestCase('null'), [('vHeader_Name') : 'Sales Performance Home '
-        , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'), [('vHeader_Name') : 'Sales Performance Home '
+		, ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
 KeywordLogger log = new KeywordLogger()
 
-//Verifying the availability of "Manage Plans" text, if it matches clicking on the Plan link
 String ManagePlans_Expected = WebUI.getText(findTestObject('Object Repository/Plans Objects/ManagePlansText'))
 
 String ManagePlans_ActualText = 'Manage Plans'
 
 if (ManagePlans_Expected.equalsIgnoreCase(ManagePlans_ActualText)) {
-    WebUI.click(findTestObject('Object Repository/Plans Objects/Plan DataTimestamp'))
+	WebUI.click(findTestObject('Object Repository/Plans Objects/Plan DataTimestamp'))
 
-    WebUI.click(findTestObject('Object Repository/Plans Objects/Plans_Link'))
+	WebUI.click(findTestObject('Object Repository/Plans Objects/Plans_Link'))
 
-    log.logPassed('On the Manage Plans Panel')
+	log.logPassed('On the Manage Plans Panel')
 } else {
-    log.logFailed('Not able to find the Manage Plans Panel ...test case failed')
+	log.logFailed('Not able to find the Manage Plans Panel ...test case failed')
 }
 
