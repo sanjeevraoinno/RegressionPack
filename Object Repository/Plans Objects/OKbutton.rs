@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Plan data</name>
+   <name>OKbutton</name>
    <tag></tag>
-   <elementGuidId>0e84e612-67de-4762-bf1d-783f58ec2709</elementGuidId>
+   <elementGuidId>9e1679b8-f757-4d4e-9ad0-7f476289a46f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+         <value>//button[@title='Ok']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+      <value>//button[@title='Ok']</value>
    </webElementProperties>
 </WebElementEntity>

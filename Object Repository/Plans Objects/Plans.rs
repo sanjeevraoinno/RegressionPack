@@ -3,7 +3,7 @@
    <description></description>
    <name>Plans</name>
    <tag></tag>
-   <elementGuidId>023b2a7d-a46e-4d96-acfb-ec62f5b803d7</elementGuidId>
+   <elementGuidId>ef399ba2-dea6-4560-a9a1-ae652dde7321</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

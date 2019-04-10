@@ -3,7 +3,7 @@
    <description></description>
    <name>Okbutton_calendar</name>
    <tag></tag>
-   <elementGuidId>4dbd7bf9-17e5-402d-8a5b-e1b7459d490d</elementGuidId>
+   <elementGuidId>4aec675d-bcef-4396-8ba4-fe23d0b28839</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

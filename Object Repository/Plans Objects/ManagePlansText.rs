@@ -3,7 +3,7 @@
    <description></description>
    <name>ManagePlansText</name>
    <tag></tag>
-   <elementGuidId>e482f7ab-cd62-439e-969f-cf5319f8f002</elementGuidId>
+   <elementGuidId>2533ddb5-5221-474b-86fb-7b5bce7505ff</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

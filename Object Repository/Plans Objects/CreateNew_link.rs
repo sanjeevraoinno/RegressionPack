@@ -3,7 +3,7 @@
    <description></description>
    <name>CreateNew_link</name>
    <tag></tag>
-   <elementGuidId>a680c839-50bc-4bf2-900c-230961679538</elementGuidId>
+   <elementGuidId>e84bd758-3920-43e8-a389-28dd7f176a70</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

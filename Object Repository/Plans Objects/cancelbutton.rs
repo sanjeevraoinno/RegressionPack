@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Plan data</name>
+   <name>cancelbutton</name>
    <tag></tag>
-   <elementGuidId>0e84e612-67de-4762-bf1d-783f58ec2709</elementGuidId>
+   <elementGuidId>245957d3-48b3-411e-808f-2d3e5251a7cc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+         <value>//div[@id='adv_button_bar']//button[@class='btn btn-default cald_3D_button_default']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+      <value>//div[@id='adv_button_bar']//button[@class='btn btn-default cald_3D_button_default']</value>
    </webElementProperties>
 </WebElementEntity>

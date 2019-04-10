@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Plan data</name>
+   <name>textcredit</name>
    <tag></tag>
-   <elementGuidId>0e84e612-67de-4762-bf1d-783f58ec2709</elementGuidId>
+   <elementGuidId>7692d460-9bc2-4e5d-994a-a99f61be2ebd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+         <value>//div[@class='sub-section-head' and text()='Credits']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+      <value>//div[@class='sub-section-head' and text()='Credits']</value>
    </webElementProperties>
 </WebElementEntity>

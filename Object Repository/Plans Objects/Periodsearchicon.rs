@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Plan data</name>
+   <name>Periodsearchicon</name>
    <tag></tag>
-   <elementGuidId>0e84e612-67de-4762-bf1d-783f58ec2709</elementGuidId>
+   <elementGuidId>a5779fa1-737e-4807-bc0f-8d4e35bc6097</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+         <value>//ul[@class='select2-results']//li[text()='Please enter 1 or more character']//preceding::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='cald-submenu-header svelte-1vu4ly0']</value>
+      <value>//ul[@class='select2-results']//li[text()='Please enter 1 or more character']//preceding::input[1]</value>
    </webElementProperties>
 </WebElementEntity>

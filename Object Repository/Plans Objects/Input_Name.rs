@@ -3,7 +3,7 @@
    <description></description>
    <name>Input_Name</name>
    <tag></tag>
-   <elementGuidId>f0b66481-470d-4bab-ad76-1741ccc1dda1</elementGuidId>
+   <elementGuidId>c512284a-a6a2-4535-8d22-58a7e4643677</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>PlansHeading</name>
    <tag></tag>
-   <elementGuidId>8f48f3cd-f479-4d44-b26c-13d16eba1dcf</elementGuidId>
+   <elementGuidId>db41ae61-a98a-418b-adff-ad6743d3120e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
