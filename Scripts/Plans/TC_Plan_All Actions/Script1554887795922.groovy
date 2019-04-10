@@ -33,7 +33,7 @@ try{
 	
 	
 	// Verifying if the landing page is "Plans" page and creating a Plan accordingly
-	String Pageheading_Expected = WebUI.getText(findTestObject('null'))
+	String Pageheading_Expected = WebUI.getText(findTestObject('Object Repository/Plans Objects/PlansHeading'))
 	
 	String Pageheading_Actual = 'Plans'
 	
@@ -43,9 +43,9 @@ try{
 			
 				j=j+1
 			
-				WebUI.click(findTestObject('null'))
+				WebUI.click(findTestObject('Object Repository/Plans Objects/CreateNew_link'))
 			
-				WebUI.click(findTestObject('null'))
+				WebUI.click(findTestObject('Object Repository/Plans Objects/Okbutton_calendar'))
 			
 				Calendar calendar = Calendar.getInstance()
 			
@@ -53,11 +53,11 @@ try{
 				
 				Planname = 'TF_Plan_' + timestamp
 				
-				WebUI.setText(findTestObject('null'), Planname)
+				WebUI.setText(findTestObject('Object Repository/Plans Objects/Input_Name'), Planname)
 			
-				WebUI.setText(findTestObject('null'), 'New plan created')
+				WebUI.setText(findTestObject('Object Repository/Plans Objects/Input_Description'), 'New plan created')
 			
-				WebUI.click(findTestObject('null'))
+				WebUI.click(findTestObject('Object Repository/Plans Objects/Save_button'))
 				
 				WebUI.waitForElementNotPresent(findTestObject('Object Repository/Plans Objects/Spinner'),20)
 				
