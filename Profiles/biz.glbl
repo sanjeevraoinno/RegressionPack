@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>biz</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'skadhulu@calliduscloud.com'</initValue>
+      <name>Username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Vinayaka@1254'</initValue>
+      <name>Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Assigning the local varible to this varible in Advancesearch testcase</description>
+      <initValue>'I am searching'</initValue>
+      <name>PositionAdvanceSearch</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

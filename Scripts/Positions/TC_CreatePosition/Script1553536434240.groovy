@@ -10,6 +10,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -19,10 +20,11 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Positions/TC_NavigationToPositions'), [('PositionName') : 'Title_9', ('ORG') : 'Organization'
         , ('Positiontxt') : 'Positions'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(100)
 
 boolean positionAddIcon = WebUI.verifyElementVisible(findTestObject('PositionObjects/Create Position/Add_Icon'))
 
@@ -58,16 +60,15 @@ if (positionAddIcon == true) {
 
     WebUI.doubleClick(findTestObject('PositionObjects/Create Position/Name_Field'))
 
-    mydate = new Date()
-
+    // mydate = new Date()
     //required format of the current date
-    currentdate_ = mydate.format('MMddYY')
-
-    currentTime_ = mydate.format('HHmm')
-
-    timestamp = ((currentdate_ + '_') + currentTime_)
-
-    dynamicPositionName = (positionName + timestamp)
+    //    currentdate_ = mydate.format('MMddYY')
+    //
+    //    currentTime_ = mydate.format('HHmmss')
+    //
+    //    timestamp = ((currentdate_ + '_') + currentTime_)
+    //
+    String dynamicPositionName = CustomKeywords.'commonUtilities.TimeStamp.timeStamp'(positionName)
 
     ' Fill the detail and Click on Save icon'
     WebUI.setText(findTestObject('PositionObjects/Create Position/Name_Field'), dynamicPositionName)
@@ -103,6 +104,13 @@ if (positionAddIcon == true) {
     KeywordUtil.markPassed('User is able to create a Position')
 
     log.logPassed('Position Creation is Successful.')
+
+    // setting gbloal varibal for search
+    GlobalVariable.PositionAdvanceSearch = dynamicPositionName
+
+    println(GlobalVariable.PositionAdvanceSearch)
+	
+	WebUI.delay(10)
 } else {
     KeywordUtil.markFailed('Failed! --User is unable to create a Position')
 

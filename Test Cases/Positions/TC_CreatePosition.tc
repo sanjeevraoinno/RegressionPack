@@ -33,4 +33,11 @@
       <masked>false</masked>
       <name>requiredTitle</name>
    </variable>
+   <variable>
+      <defaultValue>GlobalVariable.PositionAdvanceSearch</defaultValue>
+      <description></description>
+      <id>ee28aa3f-6bd1-40be-b144-b6ffbf866f72</id>
+      <masked>false</masked>
+      <name>search</name>
+   </variable>
 </TestCaseEntity>

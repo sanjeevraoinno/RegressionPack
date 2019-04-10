@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_ReferExistingParticipantandTitleOnPosition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>64eb1290-8f37-49ab-bfd7-886b2ccab1df</testCaseGuid>
+   <variable>
+      <defaultValue>'TF_Title_032619_1727'</defaultValue>
+      <description></description>
+      <id>2d5e7a61-879c-4a8d-97af-f2deaa1b296d</id>
+      <masked>false</masked>
+      <name>TitleName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test_Participant'</defaultValue>
+      <description></description>
+      <id>41e4ba0b-f1b0-4ae8-973c-76f062238361</id>
+      <masked>false</masked>
+      <name>ParticipantName</name>
+   </variable>
+</TestCaseEntity>

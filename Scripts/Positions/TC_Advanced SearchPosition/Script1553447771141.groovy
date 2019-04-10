@@ -1,9 +1,7 @@
-// Created by: Shiva
+ // Created by: Shiva
 // Description: Creating a Title
 // Created date: 3/23/2019
 // Modified date: 3/24/2019
-
-
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -50,10 +48,16 @@ WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2
 'Selecting the equal icon\r\n'
 WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-WebUI.setText(findTestObject('Advanced Search objects/td_Value'), PositionName)
+println('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
+
+WebUI.setText(findTestObject('Advanced Search objects/td_Value'), GlobalVariable.PositionAdvanceSearch)
+
+println('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
 
 'Clicking on Apply Search button\r\n'
 WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))
+
+WebUI.delay(100)
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()
 

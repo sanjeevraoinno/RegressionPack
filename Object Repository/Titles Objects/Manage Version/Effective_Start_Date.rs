@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Effective_Start_Date</name>
+   <tag></tag>
+   <elementGuidId>1fc1b39f-df45-4f2b-8198-1a10992b17ee</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;s2id_startPeriod&quot;]/a/span[2]/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;s2id_startPeriod&quot;]/a/span[2]/b</value>
+   </webElementProperties>
+</WebElementEntity>

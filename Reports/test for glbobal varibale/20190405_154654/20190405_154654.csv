@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+test for glbobal varibale,,,2019-04-05 15:46:56,2019-04-05 15:46:57,0.959s,PASSED
+,,,,,,
+Test Cases/Titles/testcodeA,,,2019-04-05 15:46:56,2019-04-05 15:46:57,0.332s,PASSED
+"PositionAdvanceSearch = ""Mysearch""",,,2019-04-05 15:46:56,2019-04-05 15:46:57,0.122s,PASSED
+println(PositionAdvanceSearch),,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.003s,PASSED
+,,,,,,
+Test Cases/Titles/testcodeB,,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.270s,PASSED
+"Name = ""tittle100""",,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.001s,PASSED
+time_ = commonUtilities.TimeStamp.timeStamp(),,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.033s,PASSED
+println(time_),,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.001s,PASSED
+println(PositionAdvanceSearch),,,2019-04-05 15:46:57,2019-04-05 15:46:57,0.001s,PASSED

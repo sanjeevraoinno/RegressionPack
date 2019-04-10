@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CreateNewVersionOfExistingTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4ac3923-2a91-4b3b-9abe-9470c45bd5c9</testCaseGuid>
+   <variable>
+      <defaultValue>'February 2006'</defaultValue>
+      <description></description>
+      <id>9c19e7bb-a1d7-4f6a-993c-827a1ce450ac</id>
+      <masked>false</masked>
+      <name>startDate</name>
+   </variable>
+</TestCaseEntity>

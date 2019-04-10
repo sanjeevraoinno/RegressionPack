@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CreateNewVersionOfExistingPosition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f8b8040-6cbb-4844-8a95-1a45ba57685f</testCaseGuid>
+   <variable>
+      <defaultValue>'February 2006'</defaultValue>
+      <description></description>
+      <id>02d32dcc-3c40-4ec4-a87c-6e259c4b2260</id>
+      <masked>false</masked>
+      <name>startDate</name>
+   </variable>
+</TestCaseEntity>

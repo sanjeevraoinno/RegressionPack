@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>358c90ee-e01c-432d-8c00-68161bb38dbc</testCaseGuid>
    <variable>
-      <defaultValue>'Pos_09'</defaultValue>
+      <defaultValue>'TF_Position_190405_182023\r\n'</defaultValue>
       <description></description>
       <id>946806e2-90f9-44d1-870e-5ea0c78d36fa</id>
       <masked>false</masked>

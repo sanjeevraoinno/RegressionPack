@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>273ee64d-6a39-416d-aa55-b7c5fc15ba17</testCaseGuid>
    <variable>
-      <defaultValue>'Title_9'</defaultValue>
-      <description></description>
-      <id>2e9407d8-7d50-422a-9aa6-54fcd29692fb</id>
-      <masked>false</masked>
-      <name>TitleName</name>
-   </variable>
-   <variable>
       <defaultValue>'Organization'</defaultValue>
       <description></description>
       <id>bdc93675-1a90-425e-a23c-21a69e0430f4</id>

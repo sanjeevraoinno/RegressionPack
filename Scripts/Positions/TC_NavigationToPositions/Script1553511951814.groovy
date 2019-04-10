@@ -23,7 +23,7 @@ import org.testng.Assert as Assert
 WebUI.callTestCase(findTestCase('Login_Navigation_Logout/TC_CommissionLoginPage'), [('vHeader_Name') : 'Sales Performance Home '
         , ('vManager_Org') : 'Manage Organization'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(100)
 
 boolean org_tab_visisble = WebUI.verifyElementVisible(findTestObject('PositionObjects/Icon_Organization'))
 
@@ -38,28 +38,29 @@ if (org_tab_visisble == true) {
     Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/PositionObjects/Organization')), ORG)
 
     println('User is able to navigate to Organization tab')
-} else {
-    'Organisation tab is not visible'
-    KeywordUtil.markFailed('Organisation tab is not visible')
+
+	WebUI.waitForElementVisible(findTestObject('Object Repository/PositionObjects/PositionsLink'), 100)
+
+	boolean position_visible = WebUI.verifyElementVisible(findTestObject('PositionObjects/PositionsLink'))
+
+	if (position_visible == true) {
+		'User able to find the Position worksapce link'
+		WebUI.mouseOver(findTestObject('Object Repository/PositionObjects/PositionsLink'), FailureHandling.STOP_ON_FAILURE)
+
+		'Clicking on Positions link\r\n\r\n'
+		WebUI.click(findTestObject('Object Repository/PositionObjects/PositionsLink'))
+
+		'Verifying the linktext of Positions\r\n'
+		Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/PositionObjects/PositionsHeading')), Positiontxt)
+
+		KeywordUtil.markPassed('User is able to navigate Postios Workspace')
+		} else {
+				KeywordUtil.markFailed('Position is not visible')
+				}
 }
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/PositionObjects/PositionsLink'), 4)
-
-boolean position_visible = WebUI.verifyElementVisible(findTestObject('PositionObjects/PositionsLink'))
-
-if (position_visible == true) {
-    'User able to find the Position worksapce link'
-    WebUI.mouseOver(findTestObject('Object Repository/PositionObjects/PositionsLink'), FailureHandling.STOP_ON_FAILURE)
-
-    'Clicking on Positions link\r\n\r\n'
-    WebUI.click(findTestObject('Object Repository/PositionObjects/PositionsLink'))
-
-    'Verifying the linktext of Positions\r\n'
-    Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/PositionObjects/PositionsHeading')), Positiontxt)
-
-    KeywordUtil.markPassed('User is able to navigate Postios Workspace') 
-	
-} else {
-    KeywordUtil.markFailed('Position is not visible')
+		 else {
+			 	'Organisation tab is not visible'
+				 	KeywordUtil.markFailed('Organisation tab is not visible')
 }
 

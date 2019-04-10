@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_ChangeTitleOfTheExistingPosition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88092e04-f67b-4b63-b1a9-512898a97eef</testCaseGuid>
+   <variable>
+      <defaultValue>'TF_Title_032619_1727'</defaultValue>
+      <description></description>
+      <id>88fab73b-dfa2-424c-8949-13aa33f99ac6</id>
+      <masked>false</masked>
+      <name>TitleName</name>
+   </variable>
+</TestCaseEntity>

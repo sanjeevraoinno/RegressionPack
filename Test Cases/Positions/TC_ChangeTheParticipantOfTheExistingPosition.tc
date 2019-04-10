@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_ChangeTheParticipantOfTheExistingPosition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65abf690-93b1-4e2c-8713-526f18e6a5ed</testCaseGuid>
+   <variable>
+      <defaultValue>'Test_Participant'</defaultValue>
+      <description></description>
+      <id>9b777173-1203-4621-9ec7-49d2c858b6f2</id>
+      <masked>false</masked>
+      <name>ParticipantName</name>
+   </variable>
+</TestCaseEntity>

@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>47ab38d2-36b0-4a4a-a35e-fe0c739478b9</testCaseGuid>
    <variable>
-      <defaultValue>'Pos_09'</defaultValue>
+      <defaultValue>GlobalVariable.PositionAdvanceSearch</defaultValue>
       <description></description>
       <id>2c4bbc00-ec2b-4a7f-a76e-797e432e2e75</id>
       <masked>false</masked>

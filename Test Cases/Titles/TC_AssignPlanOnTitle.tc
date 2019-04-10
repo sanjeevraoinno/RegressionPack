@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AssignPlanOnTitle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b128a2fe-a465-4907-a9b2-825e1b0df349</testCaseGuid>
+   <variable>
+      <defaultValue>'Hc Sales Manager Plan_G'</defaultValue>
+      <description></description>
+      <id>a85a9303-31cb-4843-a25f-03155aefc49f</id>
+      <masked>false</masked>
+      <name>PlanName</name>
+   </variable>
+</TestCaseEntity>

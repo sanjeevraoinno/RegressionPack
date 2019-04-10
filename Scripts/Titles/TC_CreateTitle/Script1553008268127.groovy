@@ -61,12 +61,13 @@ if (titleAddIcon == true) {
     //	Tname=DynamicTitleName.replace('','_') 
     //	
     //	println(Tname)
+	
     mydate = new Date()
 
     //required format of the current date
     currentdate_ = mydate.format('MMddYY')
 
-    currentTime_ = mydate.format('HHmm')
+    currentTime_ = mydate.format('HHmmss')
 
     timestamp = ((currentdate_ + '_') + currentTime_)
 
