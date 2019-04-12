@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Add_Icon</name>
+   <tag></tag>
+   <elementGuidId>c94808c8-5e3a-4e5a-aa74-087c349ae7d2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='tools']//div[@class='singleIconContainer']//span[@title='Add']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='tools']//div[@class='singleIconContainer']//span[@title='Add']</value>
+   </webElementProperties>
+</WebElementEntity>
