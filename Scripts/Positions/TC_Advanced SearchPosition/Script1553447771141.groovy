@@ -1,7 +1,12 @@
  // Created by: Shiva
-// Description: Creating a Title
+// Description: Advanced Search of Position
 // Created date: 3/23/2019
-// Modified date: 3/24/2019
+// Modified date: 4/5/2019 --> passing the dyamic created string for search.
+ 
+ /**
+  * Note: Plese run this test case in the suit, it takes the dynamic search string of position.
+  * It searches the position which created useing  time stamp.
+  */
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -48,11 +53,14 @@ WebUI.scrollToElement(findTestObject('Advanced Search objects/option_Equals'), 2
 'Selecting the equal icon\r\n'
 WebUI.click(findTestObject('Advanced Search objects/option_Equals'))
 
-println('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
+//('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
+
+//use Position for test single test case:  TF_Position_190410_085315
+
 
 WebUI.setText(findTestObject('Advanced Search objects/td_Value'), GlobalVariable.PositionAdvanceSearch)
 
-println('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
+//println('XXXXXXXXXXXXXXXXXXX' + GlobalVariable.PositionAdvanceSearch)
 
 'Clicking on Apply Search button\r\n'
 WebUI.click(findTestObject('Advanced Search objects/AppySearch_button'))

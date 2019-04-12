@@ -1,7 +1,7 @@
  // Created by: Shiva
-// Description: Creating a Title
+// Description: Creating a Position
 // Created date: 3/24/2019
-// Modified date:
+// Modified date:4/9/2019 -- create time Stamp method and called in this test case
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.awt.Robot as Robot
