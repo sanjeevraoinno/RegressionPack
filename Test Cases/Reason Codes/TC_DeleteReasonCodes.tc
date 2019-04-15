@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_DeleteReasonCodes</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d50e9dc6-1dbf-42df-abb0-ded802f30cc4</testCaseGuid>
+</TestCaseEntity>
